@@ -34,17 +34,15 @@ a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block}
 button{cursor:pointer;border:none;background:none;font-family:inherit}
 
-/* SCROLLBAR */
 ::-webkit-scrollbar{width:6px}
 ::-webkit-scrollbar-track{background:#f1f1f1}
 ::-webkit-scrollbar-thumb{background:var(--green);border-radius:3px}
 
-/* NAV */
 #navbar{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--nav-h);display:flex;align-items:center;transition:all 0.3s ease;background:transparent}
 #navbar.scrolled{background:#fff;box-shadow:0 2px 20px rgba(0,0,0,0.08)}
 #navbar.dark-bg{background:rgba(8,43,26,0.96);backdrop-filter:blur(12px)}
 .nav-inner{max-width:1320px;margin:0 auto;padding:0 32px;width:100%;display:flex;align-items:center;justify-content:space-between}
-.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo{display:flex;align-items:center;gap:10px;cursor:pointer}
 .nav-logo-icon{width:38px;height:38px;background:var(--green);border-radius:8px;display:flex;align-items:center;justify-content:center}
 .nav-logo-icon svg{fill:#fff;width:22px;height:22px}
 .nav-logo-text{font-family:var(--font-display);font-weight:700;font-size:18px;color:#fff;letter-spacing:-0.3px}
@@ -68,11 +66,9 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .mobile-link:hover{color:var(--green-light)}
 .mobile-close{position:absolute;top:24px;right:24px;color:#fff;font-size:28px;cursor:pointer;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(255,255,255,0.1)}
 
-/* PAGES */
 .page{display:none;min-height:100vh}
 .page.active{display:block}
 
-/* HERO */
 .hero{min-height:100vh;background:#082B1A;display:flex;align-items:center;position:relative;overflow:hidden}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(15,122,90,0.08) 1px,transparent 1px),linear-gradient(90deg,rgba(15,122,90,0.08) 1px,transparent 1px);background-size:64px 64px;opacity:0.6}
 .hero-glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(15,122,90,0.3) 0%,transparent 70%);top:-100px;right:-100px;border-radius:50%}
@@ -119,7 +115,6 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .hf-val{font-family:var(--font-display);font-size:18px;font-weight:700;color:#fff}
 .hf-lbl{font-size:10px;color:rgba(255,255,255,0.7)}
 
-/* SECTIONS */
 .section{padding:96px 0}
 .section-alt{background:var(--gray)}
 .container{max-width:1320px;margin:0 auto;padding:0 32px}
@@ -130,7 +125,6 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .text-center{text-align:center}
 .mx-auto{margin-left:auto;margin-right:auto}
 
-/* ABOUT PREVIEW */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
 .about-img-stack{position:relative;height:480px}
 .about-img-main{width:320px;height:380px;background:linear-gradient(135deg,var(--green-dark),var(--green));border-radius:16px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:absolute;top:0;left:0}
@@ -145,7 +139,6 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .about-check{width:20px;height:20px;background:var(--green-pale);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
 .about-check svg{fill:var(--green);width:11px;height:11px}
 
-/* SERVICES */
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
 .service-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:32px;transition:all 0.3s;cursor:default;position:relative;overflow:hidden}
 .service-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--green-pale),transparent);opacity:0;transition:opacity 0.3s}
@@ -160,7 +153,6 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .service-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:600;color:var(--green);position:relative;z-index:1;opacity:0;transform:translateX(-8px);transition:all 0.25s}
 .service-card:hover .service-link{opacity:1;transform:translateX(0)}
 
-/* INDUSTRIES */
 .industries-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
 .industry-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:28px 24px;text-align:center;transition:all 0.3s;cursor:pointer}
 .industry-card:hover{border-color:var(--green);background:var(--green-pale);box-shadow:var(--shadow)}
@@ -169,7 +161,6 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .industry-desc{font-size:12px;color:var(--gray-text);line-height:1.6}
 .industry-card:hover .industry-name{color:var(--green)}
 
-/* WHY CHOOSE */
 .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px}
 .why-card{display:flex;gap:20px;align-items:flex-start}
 .why-num{font-family:var(--font-display);font-size:48px;font-weight:700;color:var(--green-pale);line-height:1;flex-shrink:0;min-width:56px;transition:color 0.3s}
@@ -177,21 +168,18 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .why-title{font-family:var(--font-display);font-size:17px;font-weight:600;color:var(--dark);margin-bottom:8px}
 .why-text{font-size:14px;color:var(--gray-text);line-height:1.7}
 
-/* CLIENTS */
 .clients-strip{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
 .clients-track{display:flex;gap:48px;animation:scroll-logos 20s linear infinite;width:max-content}
 .client-logo{background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px 32px;font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--gray-text);white-space:nowrap;transition:all 0.2s;flex-shrink:0}
 .client-logo:hover{border-color:var(--green);color:var(--green)}
 @keyframes scroll-logos{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-/* CTA */
 .cta-section{background:linear-gradient(135deg,var(--green-dark) 0%,#082B1A 60%,#051A0E 100%);padding:100px 0;text-align:center;position:relative;overflow:hidden}
 .cta-section::before{content:'';position:absolute;width:500px;height:500px;background:radial-gradient(circle,rgba(25,169,116,0.2),transparent);top:-100px;right:-100px;border-radius:50%}
 .cta-title{font-family:var(--font-display);font-size:clamp(28px,4vw,48px);font-weight:700;color:#fff;letter-spacing:-0.5px;margin-bottom:16px;position:relative}
 .cta-sub{font-size:18px;color:rgba(255,255,255,0.65);margin-bottom:40px;position:relative}
 .cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative}
 
-/* FOOTER */
 footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px}
 .footer-brand{max-width:280px}
@@ -210,21 +198,19 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
 .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding-top:28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:gap;gap:16px}
 .footer-copy{font-size:13px;color:rgba(255,255,255,0.35)}
 
-/* ABOUT PAGE */
 .about-hero{background:linear-gradient(135deg,#082B1A,var(--green-dark));padding:140px 0 80px;color:#fff;text-align:center}
 .page-hero-title{font-family:var(--font-display);font-size:clamp(36px,5vw,56px);font-weight:700;color:#fff;letter-spacing:-0.5px;margin-bottom:16px}
 .page-hero-sub{font-size:18px;color:rgba(255,255,255,0.65);max-width:580px;margin:0 auto}
 .breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:24px;justify-content:center}
 .breadcrumb span{color:var(--green-light);cursor:pointer}
 .breadcrumb span:hover{text-decoration:underline}
-.values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+
 .value-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:32px;text-align:center;transition:all 0.3s}
 .value-card:hover{box-shadow:var(--shadow-lg);border-color:var(--green);transform:translateY(-3px)}
 .value-icon{width:60px;height:60px;background:var(--green-pale);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:26px}
 .value-title{font-family:var(--font-display);font-size:18px;font-weight:600;color:var(--dark);margin-bottom:10px}
 .value-text{font-size:14px;color:var(--gray-text);line-height:1.7}
 
-/* TIMELINE */
 .timeline{position:relative;padding-left:40px}
 .timeline::before{content:'';position:absolute;left:12px;top:0;bottom:0;width:2px;background:var(--border)}
 .timeline-item{position:relative;margin-bottom:40px}
@@ -232,10 +218,12 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
 .timeline-year{font-family:var(--font-display);font-size:13px;font-weight:700;color:var(--green);margin-bottom:4px;text-transform:uppercase;letter-spacing:1px}
 .timeline-title{font-family:var(--font-display);font-size:18px;font-weight:600;color:var(--dark);margin-bottom:6px}
 .timeline-text{font-size:14px;color:var(--gray-text);line-height:1.7;max-width:560px}
+
 .stats-band{background:var(--green);padding:56px 0;margin:0}
 .stats-band-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px;text-align:center}
 .sb-num{font-family:var(--font-display);font-size:44px;font-weight:700;color:#fff}
 .sb-lbl{font-size:13px;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+
 .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px}
 .team-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:all 0.3s}
 .team-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
@@ -245,39 +233,13 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
 .team-role{font-size:13px;color:var(--green);font-weight:500;margin-bottom:10px}
 .team-bio{font-size:13px;color:var(--gray-text);line-height:1.6}
 
-/* SERVICES PAGE */
-.services-detail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:28px}
-.svc-detail-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:all 0.3s}
-.svc-detail-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px);border-color:var(--green)}
-.svc-detail-top{background:linear-gradient(135deg,var(--green-dark),var(--green));padding:28px;display:flex;align-items:center;gap:16px}
-.svc-detail-icon{width:52px;height:52px;background:rgba(255,255,255,0.15);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
-.svc-detail-name{font-family:var(--font-display);font-size:20px;font-weight:700;color:#fff;line-height:1.2}
-.svc-detail-body{padding:24px}
-.svc-detail-desc{font-size:14px;color:var(--gray-text);line-height:1.7;margin-bottom:20px}
-.svc-benefits{list-style:none}
-.svc-benefits li{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--dark);margin-bottom:10px;line-height:1.5}
-.svc-check{color:var(--green);font-size:16px;margin-top:-1px}
-.svc-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:16px}
-.svc-tag{background:var(--green-pale);color:var(--green);font-size:11px;font-weight:600;padding:4px 10px;border-radius:100px}
-
-/* INDUSTRIES PAGE */
-.ind-detail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:28px}
-.ind-card-big{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:all 0.3s;cursor:pointer}
-.ind-card-big:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px)}
-.ind-card-img{height:200px;display:flex;align-items:center;justify-content:center;font-size:72px;position:relative}
-.ind-card-body{padding:24px}
-.ind-card-name{font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--dark);margin-bottom:8px}
-.ind-card-desc{font-size:14px;color:var(--gray-text);line-height:1.7;margin-bottom:16px}
-.ind-services-list{display:flex;gap:6px;flex-wrap:wrap}
-.ind-svc-pill{background:var(--green-pale);color:var(--green);font-size:11px;font-weight:600;padding:4px 10px;border-radius:100px}
-
-/* PROJECTS PAGE */
 .projects-filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:40px}
 .filter-btn{padding:9px 20px;border-radius:100px;font-size:13px;font-weight:600;border:1.5px solid var(--border);color:var(--gray-text);cursor:pointer;transition:all 0.2s;background:#fff}
 .filter-btn.active,.filter-btn:hover{border-color:var(--green);color:var(--green);background:var(--green-pale)}
 .search-bar{display:flex;gap:12px;margin-bottom:32px}
 .search-input{flex:1;padding:12px 16px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;font-family:var(--font-body);outline:none;transition:border 0.2s}
 .search-input:focus{border-color:var(--green)}
+
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:28px}
 .project-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:all 0.3s}
 .project-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px)}
@@ -291,29 +253,9 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
 .project-meta-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--gray-text)}
 .no-results{text-align:center;padding:80px 0;color:var(--gray-text);font-size:16px}
 
-/* CAREERS PAGE */
-.careers-hero-visual{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:32px;max-width:600px}
-.culture-card{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);border-radius:12px;padding:20px;transition:all 0.2s}
-.culture-card:hover{background:rgba(255,255,255,0.18)}
-.culture-emoji{font-size:28px;margin-bottom:8px}
-.culture-title{font-weight:600;color:#fff;font-size:14px;margin-bottom:4px}
-.culture-text{font-size:12px;color:rgba(255,255,255,0.6);line-height:1.5}
-.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
-.benefit-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:28px;text-align:center;transition:all 0.3s}
-.benefit-card:hover{box-shadow:var(--shadow);border-color:var(--green)}
-.benefit-icon{font-size:36px;margin-bottom:12px}
-.benefit-title{font-family:var(--font-display);font-size:16px;font-weight:600;color:var(--dark);margin-bottom:8px}
-.benefit-text{font-size:13px;color:var(--gray-text);line-height:1.6}
-.jobs-list{display:flex;flex-direction:column;gap:16px}
-.job-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:24px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;transition:all 0.25s;cursor:pointer}
-.job-card:hover{box-shadow:var(--shadow);border-color:var(--green)}
-.job-title{font-family:var(--font-display);font-size:17px;font-weight:600;color:var(--dark);margin-bottom:6px}
-.job-meta{display:flex;gap:16px;flex-wrap:wrap}
-.job-meta-item{display:flex;align-items:center;gap:5px;font-size:13px;color:var(--gray-text)}
-.job-type{font-size:12px;font-weight:700;padding:4px 12px;border-radius:100px;white-space:nowrap}
-.job-type.full{background:#E8F5F0;color:var(--green)}
-.job-type.contract{background:#FEF3C7;color:#92400E}
-.apply-form{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:40px;max-width:640px}
+.login-form{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:40px;max-width:420px}
+.login-form-title{font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--dark);margin-bottom:6px;text-align:center}
+.login-form-sub{font-size:14px;color:var(--gray-text);margin-bottom:28px;text-align:center}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .form-group{margin-bottom:20px}
 .form-label{display:block;font-size:13px;font-weight:600;color:var(--dark);margin-bottom:6px}
@@ -321,7 +263,6 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
 .form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--green)}
 .form-textarea{resize:vertical;min-height:120px}
 
-/* CONTACT PAGE */
 .contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;align-items:start}
 .contact-info-card{background:linear-gradient(135deg,var(--green-dark),#082B1A);border-radius:var(--radius);padding:40px;color:#fff;height:100%}
 .contact-info-title{font-family:var(--font-display);font-size:24px;font-weight:700;color:#fff;margin-bottom:8px}
@@ -340,7 +281,6 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
 .success-msg{background:var(--green-pale);border:1px solid var(--green);border-radius:8px;padding:16px;color:var(--green-dark);font-size:14px;font-weight:500;margin-top:16px;display:none}
 .success-msg.show{display:block}
 
-/* FLOATING CONTACT */
 .floating-cta{position:fixed;bottom:28px;right:28px;z-index:500;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
 .floating-btn{background:var(--green);color:#fff;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 20px rgba(15,122,90,0.4);cursor:pointer;transition:all 0.3s;border:none}
 .floating-btn:hover{background:var(--green-dark);transform:scale(1.1)}
@@ -348,7 +288,6 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
 .back-top.show{opacity:1;pointer-events:all}
 .back-top:hover{background:var(--green-pale)}
 
-/* ANIMATIONS */
 .fade-up{opacity:0;transform:translateY(30px);transition:all 0.6s cubic-bezier(0.22,1,0.36,1)}
 .fade-up.visible{opacity:1;transform:translateY(0)}
 .fade-in{opacity:0;transition:opacity 0.5s ease}
@@ -359,7 +298,21 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
 .stagger-4{transition-delay:0.4s}
 .stagger-5{transition-delay:0.5s}
 
-/* RESPONSIVE */
+.solutions-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin-bottom:56px}
+.solution-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:32px;transition:all 0.3s;position:relative}
+.solution-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px);border-color:var(--green)}
+.solution-icon{font-size:36px;margin-bottom:16px}
+.solution-title{font-family:var(--font-display);font-size:20px;font-weight:600;color:var(--dark);margin-bottom:12px}
+.solution-desc{font-size:14px;color:var(--gray-text);line-height:1.7}
+
+.docs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.doc-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:28px;text-align:center;transition:all 0.3s;cursor:pointer}
+.doc-card:hover{box-shadow:var(--shadow);border-color:var(--green)}
+.doc-icon{font-size:40px;margin-bottom:12px}
+.doc-title{font-family:var(--font-display);font-size:16px;font-weight:600;color:var(--dark);margin-bottom:8px}
+.doc-desc{font-size:12px;color:var(--gray-text);line-height:1.6}
+.doc-download{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:12px;font-weight:600;color:var(--green)}
+
 @media(max-width:1024px){
   .hero-inner{grid-template-columns:1fr;gap:48px;min-height:auto;padding-top:100px;padding-bottom:64px}
   .hero-visual{display:none}
@@ -392,23 +345,23 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav id="navbar" class="dark-bg">
   <div class="nav-inner">
     <div class="nav-logo" onclick="navigate('home')">
       <div class="nav-logo-icon">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.2l7.7 3.8-7.7 3.8-7.7-3.8L12 4.2zm-8 5.4l7 3.4v6.8l-7-3.4V9.6zm9 10.2v-6.8l7-3.4v6.8l-7 3.4z"/></svg>
       </div>
-      <div class="nav-logo-text">VAASUDEVA PROCESS MANAGEMENT PRIVATE LIMITED<span>.</span></div>
+      <div class="nav-logo-text">VAASUDEVA<span>.</span></div>
     </div>
     <div class="nav-links">
       <div class="nav-link" onclick="navigate('home')">Home</div>
       <div class="nav-link" onclick="navigate('about')">About</div>
-      <div class="nav-link" onclick="navigate('services')">Services</div>
+      <div class="nav-link" onclick="navigate('products')">Products & Services</div>
+      <div class="nav-link" onclick="navigate('solutions')">Solutions</div>
       <div class="nav-link" onclick="navigate('industries')">Industries</div>
       <div class="nav-link" onclick="navigate('projects')">Projects</div>
-      <div class="nav-link" onclick="navigate('careers')">Careers</div>
-      <div class="nav-link nav-cta" onclick="navigate('contact')">Contact Us</div>
+      <div class="nav-link" onclick="navigate('support')">Support & Community</div>
+      <div class="nav-link nav-cta" onclick="navigate('login')">Login</div>
     </div>
     <div class="hamburger" onclick="toggleMobile()">
       <span></span><span></span><span></span>
@@ -416,28 +369,24 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
   </div>
 </nav>
 
-<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <div class="mobile-close" onclick="toggleMobile()">✕</div>
   <div class="mobile-link" onclick="navigate('home');toggleMobile()">Home</div>
   <div class="mobile-link" onclick="navigate('about');toggleMobile()">About</div>
-  <div class="mobile-link" onclick="navigate('services');toggleMobile()">Services</div>
+  <div class="mobile-link" onclick="navigate('products');toggleMobile()">Products & Services</div>
+  <div class="mobile-link" onclick="navigate('solutions');toggleMobile()">Solutions</div>
   <div class="mobile-link" onclick="navigate('industries');toggleMobile()">Industries</div>
   <div class="mobile-link" onclick="navigate('projects');toggleMobile()">Projects</div>
-  <div class="mobile-link" onclick="navigate('careers');toggleMobile()">Careers</div>
-  <div class="mobile-link" onclick="navigate('contact');toggleMobile()" style="color:var(--green-light)">Contact Us</div>
+  <div class="mobile-link" onclick="navigate('support');toggleMobile()">Support & Community</div>
+  <div class="mobile-link" onclick="navigate('login');toggleMobile()" style="color:var(--green-light)">Login</div>
 </div>
 
-<!-- FLOATING BUTTONS -->
 <div class="floating-cta">
   <div class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
   <button class="floating-btn" onclick="navigate('contact')" title="Contact us">✉</button>
 </div>
 
-<!-- ===================== HOME PAGE ===================== -->
 <div class="page active" id="page-home">
-
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-grid"></div>
     <div class="hero-glow"></div>
@@ -448,7 +397,7 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
         <h1 class="hero-h1 fade-up stagger-1">Specialist Automation for <em>Water, Wastewater</em> &amp; Process Industries</h1>
         <p class="hero-sub fade-up stagger-2">Founder-led by Srinivas Prasad K S with 36+ years of industrial automation experience. Delivering turnkey instrumentation, PLC/SCADA systems, and process control solutions for water, chemical, pharma, and process plants.</p>
         <div class="hero-btns fade-up stagger-3">
-          <button class="btn-primary" onclick="navigate('services')">Explore Services →</button>
+          <button class="btn-primary" onclick="navigate('products')">Explore Services →</button>
           <button class="btn-outline" onclick="navigate('contact')">Contact Us</button>
         </div>
         <div class="hero-stats fade-up stagger-4">
@@ -493,7 +442,6 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     </div>
   </section>
 
-  <!-- ABOUT PREVIEW -->
   <section class="section">
     <div class="container">
       <div class="about-grid">
@@ -539,7 +487,6 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     </div>
   </section>
 
-  <!-- SERVICES OVERVIEW -->
   <section class="section section-alt">
     <div class="container">
       <div class="text-center fade-up">
@@ -586,12 +533,11 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
         </div>
       </div>
       <div class="text-center" style="margin-top:40px">
-        <button class="btn-green" onclick="navigate('services')">View All Services →</button>
+        <button class="btn-green" onclick="navigate('products')">View All Services →</button>
       </div>
     </div>
   </section>
 
-  <!-- INDUSTRIES SERVED -->
   <section class="section">
     <div class="container">
       <div class="text-center fade-up">
@@ -612,7 +558,6 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     </div>
   </section>
 
-  <!-- WHY VPMPL -->
   <section class="section section-alt">
     <div class="container">
       <div class="fade-up">
@@ -631,7 +576,6 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     </div>
   </section>
 
-  <!-- CLIENTS -->
   <section class="section">
     <div class="container">
       <div class="text-center fade-up" style="margin-bottom:48px">
@@ -665,7 +609,6 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="cta-section fade-up">
     <div class="container">
       <div class="section-eyebrow" style="color:var(--green-light)">Let's Build Together</div>
@@ -677,11 +620,8 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
       </div>
     </div>
   </section>
+</div>
 
-</div><!-- end home -->
-
-
-<!-- ===================== ABOUT PAGE ===================== -->
 <div class="page" id="page-about">
   <div class="about-hero">
     <div class="container">
@@ -691,7 +631,6 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     </div>
   </div>
 
-  <!-- Company Overview -->
   <section class="section">
     <div class="container">
       <div class="about-grid">
@@ -723,8 +662,6 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     </div>
   </section>
 
-
-  <!-- OEM PARTNERS -->
   <section class="section section-alt">
     <div class="container">
       <div class="text-center fade-up" style="margin-bottom:48px">
@@ -745,7 +682,6 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     </div>
   </section>
 
-  <!-- STATS BAND -->
   <div class="stats-band">
     <div class="container">
       <div class="stats-band-grid">
@@ -758,7 +694,6 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     </div>
   </div>
 
-  <!-- CORE VALUES -->
   <section class="section section-alt">
     <div class="container">
       <div class="text-center fade-up">
@@ -766,18 +701,15 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
         <h2 class="section-title mx-auto">Core <em>Values</em></h2>
         <p class="section-sub mx-auto">The principles that guide every decision, every design, every deliverable.</p>
       </div>
-      <div class="values-grid">
+      <div class="services-grid">
         <div class="value-card fade-up stagger-1"><div class="value-icon">⚙</div><h3 class="value-title">Engineering Integrity</h3><p class="value-text">We never cut corners. Every calculation is checked, every design reviewed, every system validated before it leaves our office.</p></div>
         <div class="value-card fade-up stagger-2"><div class="value-icon">🛡</div><h3 class="value-title">Safety Above All</h3><p class="value-text">Safety is not a line item. It's a design philosophy embedded in every loop diagram, every control narrative, every SIS design we produce.</p></div>
         <div class="value-card fade-up stagger-3"><div class="value-icon">💡</div><h3 class="value-title">Continuous Innovation</h3><p class="value-text">The industrial world is evolving. We invest in our team's knowledge and adopt emerging technologies to keep our clients ahead of the curve.</p></div>
         <div class="value-card fade-up stagger-4"><div class="value-icon">🤝</div><h3 class="value-title">Client Partnership</h3><p class="value-text">We don't win when a project closes. We win when your plant runs better than it did before we arrived — and keeps improving.</p></div>
-        <div class="value-card fade-up stagger-1"><div class="value-icon">🌍</div><h3 class="value-title">Sustainability Focus</h3><p class="value-text">Energy efficiency, emission reduction, and waste minimization are engineering requirements, not afterthoughts, in every VPMPL project.</p></div>
-        <div class="value-card fade-up stagger-2"><div class="value-icon">📐</div><h3 class="value-title">Precision Delivery</h3><p class="value-text">On-time, on-spec, and on-budget delivery is our baseline — not a differentiator. Our project management rigour backs every commitment.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- TIMELINE -->
   <section class="section">
     <div class="container">
       <div class="text-center fade-up" style="margin-bottom:56px">
@@ -787,18 +719,14 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
       <div style="max-width:680px;margin:0 auto">
         <div class="timeline">
           <div class="timeline-item fade-up"><div class="timeline-dot"></div><div class="timeline-year">2006</div><div class="timeline-title">Company Founded</div><div class="timeline-text">VPMPL established in Bengaluru as an instrumentation engineering consultancy, serving chemical and petrochemical clients in South India.</div></div>
-          <div class="timeline-item fade-up stagger-1"><div class="timeline-dot"></div><div class="timeline-year">2009</div><div class="timeline-title">First DCS Project</div><div class="timeline-text">Completed first large-scale DCS migration project for a major refinery in Gujarat, expanding service portfolio to include control system engineering.</div></div>
-          <div class="timeline-item fade-up stagger-2"><div class="timeline-dot"></div><div class="timeline-year">2012</div><div class="timeline-title">ISO 9001 Certification</div><div class="timeline-text">Achieved ISO 9001:2008 certification, formalizing quality management systems and opening doors to international project opportunities.</div></div>
-          <div class="timeline-item fade-up stagger-3"><div class="timeline-dot"></div><div class="timeline-year">2015</div><div class="timeline-title">Middle East Expansion</div><div class="timeline-text">First international project delivery in UAE and Oman, establishing VPMPL's credentials as a global industrial engineering partner.</div></div>
-          <div class="timeline-item fade-up stagger-1"><div class="timeline-dot"></div><div class="timeline-year">2018</div><div class="timeline-title">Digital Transformation Practice</div><div class="timeline-text">Launched dedicated Industry 4.0 and IIoT practice, delivering first digital twin implementation for a polymer manufacturing plant.</div></div>
-          <div class="timeline-item fade-up stagger-2"><div class="timeline-dot"></div><div class="timeline-year">2021</div><div class="timeline-title">OT Cybersecurity Division</div><div class="timeline-text">Established OT security practice aligned to IEC 62443, helping clients protect critical infrastructure from evolving cyber threats.</div></div>
+          <div class="timeline-item fade-up stagger-1"><div class="timeline-dot"></div><div class="timeline-year">2012</div><div class="timeline-title">ISO 9001 Certification</div><div class="timeline-text">Achieved ISO 9001:2008 certification, formalizing quality management systems and opening doors to international project opportunities.</div></div>
+          <div class="timeline-item fade-up stagger-2"><div class="timeline-dot"></div><div class="timeline-year">2015</div><div class="timeline-title">Middle East Expansion</div><div class="timeline-text">First international project delivery in UAE and Oman, establishing VPMPL's credentials as a global industrial engineering partner.</div></div>
           <div class="timeline-item fade-up stagger-3"><div class="timeline-dot"></div><div class="timeline-year">2024</div><div class="timeline-title">350+ Projects Milestone</div><div class="timeline-text">Crossed the 350-project milestone with 85+ engineers, 120+ active clients, and project delivery across 12 countries.</div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- LEADERSHIP -->
   <section class="section section-alt">
     <div class="container">
       <div class="text-center fade-up">
@@ -815,80 +743,164 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     </div>
   </section>
 
-  <section class="cta-section"><div class="container"><h2 class="cta-title">Interested in Joining Our Team?</h2><p class="cta-sub">We're always looking for exceptional engineers to grow with us.</p><div class="cta-btns"><button class="btn-primary" onclick="navigate('careers')">Explore Careers →</button><button class="btn-outline" onclick="navigate('contact')">Get In Touch</button></div></div></section>
-</div><!-- end about -->
+  <section class="cta-section"><div class="container"><h2 class="cta-title">Interested in Working with Us?</h2><p class="cta-sub">We're always open to partnerships and collaborations.</p><div class="cta-btns"><button class="btn-primary" onclick="navigate('contact')">Get In Touch →</button></div></div></section>
+</div>
 
-
-<!-- ===================== SERVICES PAGE ===================== -->
-<div class="page" id="page-services">
+<div class="page" id="page-products">
   <div class="about-hero">
     <div class="container">
-      <div class="breadcrumb"><span onclick="navigate('home')">Home</span> / Services</div>
-      <h1 class="page-hero-title">Engineering Services</h1>
-      <p class="page-hero-sub">Specialist process instrumentation and automation services for water treatment and chemical/process plants — delivered as complete engineering solutions, not product quotations.</p>
+      <div class="breadcrumb"><span onclick="navigate('home')">Home</span> / Products & Services</div>
+      <h1 class="page-hero-title">Products & Services</h1>
+      <p class="page-hero-sub">Comprehensive engineering solutions for process instrumentation and automation — from conception through commissioning and beyond.</p>
     </div>
   </div>
   <section class="section">
     <div class="container">
-      <div class="services-detail-grid">
-        <div class="svc-detail-card fade-up stagger-1"><div class="svc-detail-top"><div class="svc-detail-icon">⚙</div><div class="svc-detail-name">Process Automation</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Full lifecycle automation engineering from concept through commissioning. We design, configure, test, and commission automation systems that drive real operational improvement.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>PLC & PAC programming (Siemens, Allen-Bradley, Mitsubishi)</li><li><span class="svc-check">✓</span>Batch automation (ISA-88 compliant)</li><li><span class="svc-check">✓</span>Motor control and drive integration</li><li><span class="svc-check">✓</span>Safety PLC engineering and validation</li></ul><div class="svc-tags"><span class="svc-tag">Oil & Gas</span><span class="svc-tag">Chemical</span><span class="svc-tag">Pharma</span></div></div></div>
-
-        <div class="svc-detail-card fade-up stagger-2"><div class="svc-detail-top"><div class="svc-detail-icon">📡</div><div class="svc-detail-name">Instrumentation Engineering</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Comprehensive process instrumentation services — from flow, pressure, temperature, and level selection through full datasheet packages, loop diagrams, and commissioning procedures for water treatment and process plants.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>Instrument index, datasheets, and specifications</li><li><span class="svc-check">✓</span>Loop diagrams and hook-up drawings</li><li><span class="svc-check">✓</span>Online water quality and gas analysers</li><li><span class="svc-check">✓</span>Hazardous area instrument selection (ATEX/IECEx)</li></ul><div class="svc-tags"><span class="svc-tag">Water Treatment</span><span class="svc-tag">Chemical</span><span class="svc-tag">Pharma</span></div></div></div>
-
-        <div class="svc-detail-card fade-up stagger-3"><div class="svc-detail-top"><div class="svc-detail-icon">🖥</div><div class="svc-detail-name">DCS Solutions</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Vendor-agnostic DCS engineering across Honeywell Experion, ABB System 800xA, Yokogawa CENTUM VP, Emerson DeltaV, and Siemens PCS 7/neo platforms.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>Control narrative development</li><li><span class="svc-check">✓</span>DCS configuration and graphics</li><li><span class="svc-check">✓</span>FAT/SAT support and execution</li><li><span class="svc-check">✓</span>DCS migration and upgrade projects</li></ul><div class="svc-tags"><span class="svc-tag">Petrochemical</span><span class="svc-tag">Power</span></div></div></div>
-
-        <div class="svc-detail-card fade-up stagger-1"><div class="svc-detail-top"><div class="svc-detail-icon">📊</div><div class="svc-detail-name">SCADA Solutions</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Custom SCADA system design, development, and commissioning for geographically distributed assets using Ignition, WinCC, iFIX, and InTouch platforms.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>SCADA architecture and design</li><li><span class="svc-check">✓</span>HMI/SCADA graphics development</li><li><span class="svc-check">✓</span>Historian and reporting integration</li><li><span class="svc-check">✓</span>Remote monitoring and alarm management</li></ul><div class="svc-tags"><span class="svc-tag">Water</span><span class="svc-tag">Oil & Gas</span><span class="svc-tag">Energy</span></div></div></div>
-
-        <div class="svc-detail-card fade-up stagger-1"><div class="svc-detail-top"><div class="svc-detail-icon">🧪</div><div class="svc-detail-name">Analyser Systems</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Selection, supply, integration, and commissioning of online process analysers for water quality monitoring, gas detection, and continuous emissions monitoring in treatment and process plants.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>Water quality analysers (pH, DO, turbidity, COD)</li><li><span class="svc-check">✓</span>Gas analysers and leak detection systems</li><li><span class="svc-check">✓</span>CEMS for emission compliance</li><li><span class="svc-check">✓</span>Analyser shelter design and integration</li></ul><div class="svc-tags"><span class="svc-tag">Water</span><span class="svc-tag">Chemical</span><span class="svc-tag">Environment</span></div></div></div>
-        <div class="svc-detail-card fade-up stagger-2"><div class="svc-detail-top"><div class="svc-detail-icon">🔐</div><div class="svc-detail-name">OT Cybersecurity</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Industrial control system security assessment and hardening aligned to IEC 62443, NIST CSF, and NERC CIP standards for critical infrastructure protection.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>OT security risk assessment</li><li><span class="svc-check">✓</span>Network segmentation and zone design</li><li><span class="svc-check">✓</span>Patch management and vulnerability analysis</li><li><span class="svc-check">✓</span>IEC 62443 compliance gap analysis</li></ul><div class="svc-tags"><span class="svc-tag">Critical Infrastructure</span><span class="svc-tag">Utility</span></div></div></div>
-
-        <div class="svc-detail-card fade-up stagger-3"><div class="svc-detail-top"><div class="svc-detail-icon">🌐</div><div class="svc-detail-name">Industry 4.0</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Connecting OT and IT layers through IIoT platforms, edge computing, and cloud integration to unlock real-time visibility and data-driven decision making.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>IIoT sensor integration and edge computing</li><li><span class="svc-check">✓</span>Digital twin development</li><li><span class="svc-check">✓</span>Predictive maintenance platforms</li><li><span class="svc-check">✓</span>MES and ERP integration</li></ul><div class="svc-tags"><span class="svc-tag">Manufacturing</span><span class="svc-tag">Pharma</span></div></div></div>
-
-        <div class="svc-detail-card fade-up stagger-1"><div class="svc-detail-top"><div class="svc-detail-icon">🛡</div><div class="svc-detail-name">Safety Instrumented Systems</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Functional safety engineering from HAZOP facilitation through SIL verification, SIS design, and third-party validation for IEC 61511 compliance.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>HAZOP and LOPA facilitation</li><li><span class="svc-check">✓</span>SIL determination and verification</li><li><span class="svc-check">✓</span>SIS logic solver engineering</li><li><span class="svc-check">✓</span>Proof test procedures development</li></ul><div class="svc-tags"><span class="svc-tag">Oil & Gas</span><span class="svc-tag">Chemical</span><span class="svc-tag">Refinery</span></div></div></div>
-
-        <div class="svc-detail-card fade-up stagger-2"><div class="svc-detail-top"><div class="svc-detail-icon">🔧</div><div class="svc-detail-name">Commissioning & Support</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Hands-on commissioning support from pre-commissioning checks through startup assistance and post-handover optimization, ensuring plants perform on day one.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>Pre-commissioning and loop checking</li><li><span class="svc-check">✓</span>Plant startup and shutdown procedures</li><li><span class="svc-check">✓</span>Control loop tuning and optimization</li><li><span class="svc-check">✓</span>O&M documentation and training</li></ul><div class="svc-tags"><span class="svc-tag">All Industries</span></div></div></div>
+      <div class="services-grid">
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.92c.04-.34.07-.69.07-1.08s-.03-.74-.07-1.08l2.32-1.81c.2-.16.25-.45.12-.68l-2.2-3.81c-.13-.23-.42-.3-.64-.2l-2.73 1.1c-.57-.44-1.18-.8-1.85-1.08L14.2 2.18C14.12 1.9 13.86 1.7 13.56 1.7h-3.12c-.3 0-.55.19-.63.47l-.41 2.76c-.67.28-1.29.65-1.86 1.08L4.8 5c-.22-.09-.5-.01-.63.21L1.97 9.02c-.12.22-.07.51.12.67l2.32 1.82c-.04.34-.07.68-.07 1.08s.03.74.07 1.08L2.09 15.49c-.2.16-.25.45-.12.68l2.2 3.81c.13.23.42.3.64.2l2.73-1.1c.57.44 1.18.8 1.85 1.08l.41 2.76c.08.29.34.48.63.48h3.12c.3 0 .55-.19.63-.47l.41-2.76c.67-.28 1.29-.65 1.86-1.08l2.73 1.1c.22.09.5.01.63-.21l2.2-3.81c.13-.22.07-.51-.12-.67l-2.32-1.82z"/></svg></div>
+          <div class="service-name">Process Automation</div>
+          <div class="service-desc">Full lifecycle automation engineering from concept through commissioning. We design, configure, test, and commission automation systems that drive real operational improvement.</div>
+        </div>
+        <div class="service-card fade-up stagger-2">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M7 20h2v1h1v-1h2v-1H7v1m4-4H8a1 1 0 0 0-1 1v1h6v-1a1 1 0 0 0-1-1m-2-1.5A3.5 3.5 0 0 0 5.5 18H3v2h2.5A5.5 5.5 0 0 1 9 9.5V7.68A3 3 0 0 0 7 5V3H5v2h2v.5a1 1 0 0 1-2 0V5H3v.5A3 3 0 0 0 5.5 8.29V9.5A5.52 5.52 0 0 0 9 14.5v.03c0 .82.67 1.47 1.5 1.47.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5m5.5-5a3.5 3.5 0 0 0-3.5 3.5 3.5 3.5 0 0 0 3.5 3.5 3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 14.5 9.5m0 5A1.5 1.5 0 0 1 13 13a1.5 1.5 0 0 1 1.5-1.5A1.5 1.5 0 0 1 16 13a1.5 1.5 0 0 1-1.5 1.5M21 3v2h-2v.5a1 1 0 0 1-2 0V5h2V3h-2a2 2 0 0 0-2 2v.5a3 3 0 0 0 2.5 2.96V9.5A5.5 5.5 0 0 1 15 20h2.5V18H20a5.5 5.5 0 0 0-1.5-10.79V8.29A3 3 0 0 0 21 5.5V3h-2 2z"/></svg></div>
+          <div class="service-name">Instrumentation Engineering</div>
+          <div class="service-desc">Complete instrumentation packages with instrument selection, datasheets, loop diagrams, and commissioning procedures for water and process plants.</div>
+        </div>
+        <div class="service-card fade-up stagger-3">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z"/></svg></div>
+          <div class="service-name">DCS Solutions</div>
+          <div class="service-desc">Vendor-agnostic DCS engineering across Honeywell, ABB, Yokogawa, Emerson, and Siemens platforms.</div>
+        </div>
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2z"/></svg></div>
+          <div class="service-name">SCADA Solutions</div>
+          <div class="service-desc">Custom SCADA system design and commissioning for distributed assets using Ignition, WinCC, iFIX, and InTouch.</div>
+        </div>
+        <div class="service-card fade-up stagger-2">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg></div>
+          <div class="service-name">Industry 4.0</div>
+          <div class="service-desc">IIoT integration, digital twin development, and cloud connectivity for modern industrial transformation.</div>
+        </div>
+        <div class="service-card fade-up stagger-3">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M2 20h20v2H2v-2zm2-8h2v7H4v-7zm5-4h2v11H9V8zm5 2h2v9h-2v-9zm5-6h2v15h-2V4z"/></svg></div>
+          <div class="service-name">Commissioning & Support</div>
+          <div class="service-desc">Hands-on commissioning from pre-commissioning checks through startup assistance and optimization.</div>
+        </div>
       </div>
     </div>
   </section>
-  <section class="cta-section"><div class="container"><h2 class="cta-title">Need a Custom Solution?</h2><p class="cta-sub">Every plant is different. Let's talk about what your specific challenge requires.</p><div class="cta-btns"><button class="btn-primary" onclick="navigate('contact')">Request a Consultation →</button></div></div></section>
-</div><!-- end services -->
+  <section class="cta-section"><div class="container"><h2 class="cta-title">Need a Custom Solution?</h2><p class="cta-sub">Every plant is different. Let's discuss your specific requirements.</p><div class="cta-btns"><button class="btn-primary" onclick="navigate('contact')">Request Consultation →</button></div></div></section>
+</div>
 
+<div class="page" id="page-solutions">
+  <div class="about-hero">
+    <div class="container">
+      <div class="breadcrumb"><span onclick="navigate('home')">Home</span> / Solutions</div>
+      <h1 class="page-hero-title">Engineering Solutions</h1>
+      <p class="page-hero-sub">Integrated solutions across automation, digitalization, safety, and process optimization.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="text-center fade-up" style="margin-bottom:56px">
+        <div class="section-eyebrow">What We Deliver</div>
+        <h2 class="section-title mx-auto">End-to-End <em>Solutions</em></h2>
+        <p class="section-sub mx-auto">From control system architecture to digital transformation, we design and implement solutions that solve real industrial challenges.</p>
+      </div>
+      <div class="solutions-grid">
+        <div class="solution-card fade-up stagger-1">
+          <div class="solution-icon">🏗️</div>
+          <div class="solution-title">Automation Architecture Design</div>
+          <div class="solution-desc">Strategic architecture design encompassing control philosophy, system topology, vendor selection, and implementation roadmap aligned with your operational goals.</div>
+        </div>
+        <div class="solution-card fade-up stagger-2">
+          <div class="solution-icon">🔧</div>
+          <div class="solution-title">Turnkey Project Delivery</div>
+          <div class="solution-desc">Complete project execution from engineering through FAT, SAT, commissioning, training, and post-handover optimization with structured project management.</div>
+        </div>
+        <div class="solution-card fade-up stagger-3">
+          <div class="solution-icon">🌐</div>
+          <div class="solution-title">Digital Transformation</div>
+          <div class="solution-desc">Bridging OT and IT layers through IIoT platforms, edge computing, digital twin creation, and cloud integration for real-time visibility and intelligence.</div>
+        </div>
+        <div class="solution-card fade-up stagger-1">
+          <div class="solution-icon">🛡️</div>
+          <div class="solution-title">Safety & Compliance</div>
+          <div class="solution-desc">Functional safety engineering (SIL verification), OT cybersecurity (IEC 62443), ATEX/IECEx compliance, and GMP validation for regulated environments.</div>
+        </div>
+        <div class="solution-card fade-up stagger-2">
+          <div class="solution-icon">📊</div>
+          <div class="solution-title">Performance Optimization</div>
+          <div class="solution-desc">Advanced process control tuning, energy efficiency audits, OEE monitoring, predictive maintenance implementation, and production optimization.</div>
+        </div>
+        <div class="solution-card fade-up stagger-3">
+          <div class="solution-icon">👥</div>
+          <div class="solution-title">Training & Knowledge Transfer</div>
+          <div class="solution-desc">Comprehensive operator and engineer training, documentation, knowledge transfer programs, and ongoing technical support to ensure client self-sufficiency.</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- ===================== INDUSTRIES PAGE ===================== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="text-center fade-up" style="margin-bottom:48px">
+        <div class="section-eyebrow">Industry-Specific Approaches</div>
+        <h2 class="section-title mx-auto">Tailored <em>Solutions</em></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon">💧</div>
+          <div class="service-name">Water & Wastewater</div>
+          <div class="service-desc">Specialized SCADA and telemetry solutions for treatment plants, pump stations, distribution networks, and compliance monitoring with deep domain expertise.</div>
+        </div>
+        <div class="service-card fade-up stagger-2">
+          <div class="service-icon">⚗️</div>
+          <div class="service-name">Chemical & Pharma</div>
+          <div class="service-desc">Batch automation, continuous process control, GMP compliance, GAMP5 validation, and 21 CFR Part 11 digital record management.</div>
+        </div>
+        <div class="service-card fade-up stagger-3">
+          <div class="service-icon">🛢️</div>
+          <div class="service-name">Oil & Gas</div>
+          <div class="service-desc">Upstream to downstream automation with SIL-rated safety systems, wellhead control, pipeline SCADA, and refinery DCS integration.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section"><div class="container"><h2 class="cta-title">Let's Design Your Solution</h2><p class="cta-sub">Contact our engineering team to discuss your specific challenge and how we can help.</p><div class="cta-btns"><button class="btn-primary" onclick="navigate('contact')">Start the Conversation →</button></div></div></section>
+</div>
+
 <div class="page" id="page-industries">
   <div class="about-hero">
     <div class="container">
       <div class="breadcrumb"><span onclick="navigate('home')">Home</span> / Industries</div>
       <h1 class="page-hero-title">Industries We Serve</h1>
-      <p class="page-hero-sub">Primary expertise in Water &amp; Wastewater and Chemical/Process industries, built through 36+ years of hands-on project delivery. We serve additional sectors from this strong foundation.</p>
+      <p class="page-hero-sub">Primary expertise in Water & Wastewater and Chemical/Process industries, built through 36+ years of hands-on project delivery.</p>
     </div>
   </div>
   <section class="section">
     <div class="container">
-      <div class="ind-detail-grid">
-        <div class="ind-card-big fade-up stagger-1"><div class="ind-card-img" style="background:linear-gradient(135deg,#1a2f1a,#2d5a27)"><span>🛢</span></div><div class="ind-card-body"><div class="ind-card-name">Oil & Gas</div><p class="ind-card-desc">Upstream exploration to downstream refining — we deliver automation solutions for wellhead controls, pipeline SCADA, tank farm management, and refinery DCS systems with full functional safety coverage.</p><div class="ind-services-list"><span class="ind-svc-pill">Wellhead Control</span><span class="ind-svc-pill">Pipeline SCADA</span><span class="ind-svc-pill">Refinery DCS</span><span class="ind-svc-pill">SIS Engineering</span></div></div></div>
-
-        <div class="ind-card-big fade-up stagger-2"><div class="ind-card-img" style="background:linear-gradient(135deg,#1a2030,#263450)"><span>⚗</span></div><div class="ind-card-body"><div class="ind-card-name">Chemical & Petrochemical</div><p class="ind-card-desc">Continuous and batch process automation for chemical manufacturing. We understand the unique demands of exothermic reactions, reactive chemical handling, and multi-unit process coordination.</p><div class="ind-services-list"><span class="ind-svc-pill">Batch Automation</span><span class="ind-svc-pill">Continuous Control</span><span class="ind-svc-pill">Reactor Control</span><span class="ind-svc-pill">DCS Migration</span></div></div></div>
-
-        <div class="ind-card-big fade-up stagger-3"><div class="ind-card-img" style="background:linear-gradient(135deg,#2a1a1a,#4a2020)"><span>⚡</span></div><div class="ind-card-body"><div class="ind-card-name">Power Generation</div><p class="ind-card-desc">Control systems for thermal, gas, hydro, and renewable power plants. Turbine control, boiler management, grid synchronization, and plant-wide SCADA for generation and transmission.</p><div class="ind-services-list"><span class="ind-svc-pill">Turbine Control</span><span class="ind-svc-pill">Boiler Automation</span><span class="ind-svc-pill">Grid SCADA</span><span class="ind-svc-pill">Renewable Integration</span></div></div></div>
-
-        <div class="ind-card-big fade-up stagger-1"><div class="ind-card-img" style="background:linear-gradient(135deg,#0f2a2a,#1a4040)"><span>💧</span></div><div class="ind-card-body"><div class="ind-card-name">Water & Wastewater</div><p class="ind-card-desc">SCADA and telemetry systems for water treatment, distribution networks, and wastewater management. From compact package plants to large metropolitan water supply schemes.</p><div class="ind-services-list"><span class="ind-svc-pill">Water SCADA</span><span class="ind-svc-pill">Treatment Automation</span><span class="ind-svc-pill">Pump Station Control</span><span class="ind-svc-pill">AMI Integration</span></div></div></div>
-
-        <div class="ind-card-big fade-up stagger-2"><div class="ind-card-img" style="background:linear-gradient(135deg,#1a1a30,#282840)"><span>🔩</span></div><div class="ind-card-body"><div class="ind-card-name">Manufacturing</div><p class="ind-card-desc">Smart factory enablement through PLC-based machine automation, MES integration, OEE monitoring, and IIoT connectivity that brings Industry 4.0 to the shop floor.</p><div class="ind-services-list"><span class="ind-svc-pill">Machine Automation</span><span class="ind-svc-pill">MES Integration</span><span class="ind-svc-pill">OEE Monitoring</span><span class="ind-svc-pill">Digital Twin</span></div></div></div>
-
-        <div class="ind-card-big fade-up stagger-3"><div class="ind-card-img" style="background:linear-gradient(135deg,#0f1a2a,#1a2a40)"><span>💊</span></div><div class="ind-card-body"><div class="ind-card-name">Pharmaceutical</div><p class="ind-card-desc">GMP-compliant automation with full validation support (IQ/OQ/PQ). GAMP5 lifecycle management, batch record automation, and 21 CFR Part 11 compliance for regulated environments.</p><div class="ind-services-list"><span class="ind-svc-pill">GMP Automation</span><span class="ind-svc-pill">Validation Support</span><span class="ind-svc-pill">Batch Records</span><span class="ind-svc-pill">21 CFR Compliance</span></div></div></div>
-
-        <div class="ind-card-big fade-up stagger-1"><div class="ind-card-img" style="background:linear-gradient(135deg,#1a2a1a,#2a3a20)"><span>🌾</span></div><div class="ind-card-body"><div class="ind-card-name">Food & Beverage</div><p class="ind-card-desc">Hygienic process automation with clean-in-place (CIP) integration, recipe management, traceability systems, and temperature-critical control for food safety compliance.</p><div class="ind-services-list"><span class="ind-svc-pill">CIP Automation</span><span class="ind-svc-pill">Recipe Management</span><span class="ind-svc-pill">Traceability</span><span class="ind-svc-pill">Cold Chain Control</span></div></div></div>
-
-        <div class="ind-card-big fade-up stagger-2"><div class="ind-card-img" style="background:linear-gradient(135deg,#2a1a2a,#3a2040)"><span>🏗</span></div><div class="ind-card-body"><div class="ind-card-name">Mining & Metals</div><p class="ind-card-desc">Robust control systems for harsh mining environments — conveyor automation, crusher control, flotation management, and smelter process control in demanding conditions.</p><div class="ind-services-list"><span class="ind-svc-pill">Conveyor Automation</span><span class="ind-svc-pill">Process Control</span><span class="ind-svc-pill">Remote SCADA</span><span class="ind-svc-pill">Safety Systems</span></div></div></div>
+      <div class="text-center fade-up" style="margin-bottom:48px">
+        <div class="section-eyebrow">Deep Domain Expertise</div>
+        <h2 class="section-title mx-auto">Industries & <em>Applications</em></h2>
+      </div>
+      <div class="industries-grid">
+        <div class="industry-card fade-up stagger-1"><div class="industry-icon">🛢</div><div class="industry-name">Oil & Gas</div><div class="industry-desc">Upstream, midstream, and downstream automation with full SIS engineering</div></div>
+        <div class="industry-card fade-up stagger-2"><div class="industry-icon">⚗</div><div class="industry-name">Chemical</div><div class="industry-desc">Batch and continuous process control for manufacturing and refining</div></div>
+        <div class="industry-card fade-up stagger-3"><div class="industry-icon">🏭</div><div class="industry-name">Petrochemical</div><div class="industry-desc">Refinery automation, polymerization control, and advanced analytics</div></div>
+        <div class="industry-card fade-up stagger-4"><div class="industry-icon">⚡</div><div class="industry-name">Power</div><div class="industry-desc">Thermal, gas, hydro, and renewable generation control systems</div></div>
+        <div class="industry-card fade-up stagger-1"><div class="industry-icon">💧</div><div class="industry-name">Water Treatment</div><div class="industry-desc">Water and wastewater SCADA, telemetry, and compliance systems</div></div>
+        <div class="industry-card fade-up stagger-2"><div class="industry-icon">🔩</div><div class="industry-name">Manufacturing</div><div class="industry-desc">Smart factory automation, MES integration, and IIoT enablement</div></div>
+        <div class="industry-card fade-up stagger-3"><div class="industry-icon">💊</div><div class="industry-name">Pharmaceutical</div><div class="industry-desc">GMP automation, validation, batch records, and regulatory compliance</div></div>
+        <div class="industry-card fade-up stagger-4"><div class="industry-icon">🌾</div><div class="industry-name">Food & Beverage</div><div class="industry-desc">Hygienic process control, CIP automation, and traceability systems</div></div>
       </div>
     </div>
   </section>
-  <section class="cta-section"><div class="container"><h2 class="cta-title">Your Industry. Our Expertise.</h2><p class="cta-sub">Tell us about your project and let's discuss how VPMPL can help.</p><div class="cta-btns"><button class="btn-primary" onclick="navigate('contact')">Start a Conversation →</button></div></div></section>
-</div><!-- end industries -->
+  <section class="cta-section"><div class="container"><h2 class="cta-title">Your Industry. Our Expertise.</h2><p class="cta-sub">Tell us about your operational challenge and let's discuss how VPMPL can help.</p><div class="cta-btns"><button class="btn-primary" onclick="navigate('contact')">Get In Touch →</button></div></div></section>
+</div>
 
-
-<!-- ===================== PROJECTS PAGE ===================== -->
 <div class="page" id="page-projects">
   <div class="about-hero">
     <div class="container">
@@ -900,7 +912,7 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
   <section class="section">
     <div class="container">
       <div class="search-bar">
-        <input type="text" class="search-input" id="projectSearch" placeholder="Search projects by name, industry, or technology..." oninput="filterProjects()">
+        <input type="text" class="search-input" id="projectSearch" placeholder="Search projects..." oninput="filterProjects()">
       </div>
       <div class="projects-filters" id="projectFilters">
         <button class="filter-btn active" onclick="setFilter('all', this)">All Projects</button>
@@ -911,100 +923,206 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
         <button class="filter-btn" onclick="setFilter('scada', this)">SCADA</button>
       </div>
       <div class="projects-grid" id="projectsGrid"></div>
-      <div class="no-results" id="noResults" style="display:none">No projects found matching your search. Try different keywords.</div>
+      <div class="no-results" id="noResults" style="display:none">No projects found matching your search.</div>
     </div>
   </section>
-</div><!-- end projects -->
+</div>
 
-
-<!-- ===================== CAREERS PAGE ===================== -->
-<div class="page" id="page-careers">
-  <div class="about-hero" style="background:linear-gradient(135deg,#082B1A,var(--green-dark),#051A0E)">
-    <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center">
-      <div>
-        <div class="breadcrumb"><span onclick="navigate('home')">Home</span> / Careers</div>
-        <h1 class="page-hero-title" style="text-align:left">Build What Matters.<br>Grow with VPMPL.</h1>
-        <p class="page-hero-sub" style="text-align:left;margin:0">Join a specialist automation team led by a 36-year industry expert. Work on real water and process industry projects — and learn engineering the right way, from people who have done it hands-on.</p>
-      </div>
-      <div class="careers-hero-visual">
-        <div class="culture-card"><div class="culture-emoji">🔬</div><div class="culture-title">Deep Engineering</div><div class="culture-text">Work on complex, technically challenging problems that genuinely require expertise</div></div>
-        <div class="culture-card"><div class="culture-emoji">🌍</div><div class="culture-title">Global Exposure</div><div class="culture-text">Projects across the Middle East, Southeast Asia, and India's major industrial hubs</div></div>
-        <div class="culture-card"><div class="culture-emoji">📈</div><div class="culture-title">Career Growth</div><div class="culture-text">Structured technical tracks with mentorship from senior domain experts</div></div>
-        <div class="culture-card"><div class="culture-emoji">🤝</div><div class="culture-title">Collaborative Culture</div><div class="culture-text">Engineering teams that collaborate, not compete. Ideas win on merit here.</div></div>
-      </div>
+<div class="page" id="page-support">
+  <div class="about-hero">
+    <div class="container">
+      <div class="breadcrumb"><span onclick="navigate('home')">Home</span> / Support & Community</div>
+      <h1 class="page-hero-title">Support & Community</h1>
+      <p class="page-hero-sub">Technical documentation, resources, and community support for our partners and clients.</p>
     </div>
   </div>
-
-  <!-- BENEFITS -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="text-center fade-up">
-        <div class="section-eyebrow">Why Join Us</div>
-        <h2 class="section-title mx-auto">What We <em>Offer</em></h2>
-      </div>
-      <div class="benefits-grid">
-        <div class="benefit-card fade-up stagger-1"><div class="benefit-icon">💰</div><div class="benefit-title">Competitive Compensation</div><div class="benefit-text">Market-leading salaries with performance bonuses tied to project outcomes and individual growth.</div></div>
-        <div class="benefit-card fade-up stagger-2"><div class="benefit-icon">📚</div><div class="benefit-title">Learning & Development</div><div class="benefit-text">Funded certifications, vendor training (Honeywell, ABB, Yokogawa), and access to industry conferences.</div></div>
-        <div class="benefit-card fade-up stagger-3"><div class="benefit-icon">✈</div><div class="benefit-title">International Projects</div><div class="benefit-text">Opportunities to work onsite at plants across the Middle East, Southeast Asia, and Africa.</div></div>
-        <div class="benefit-card fade-up stagger-4"><div class="benefit-icon">🏥</div><div class="benefit-title">Comprehensive Benefits</div><div class="benefit-text">Full health coverage for self and family, Group term insurance, and PF contributions above statutory minimum.</div></div>
-        <div class="benefit-card fade-up stagger-1"><div class="benefit-icon">⏰</div><div class="benefit-title">Flexible Work</div><div class="benefit-text">Hybrid work model for non-site roles, with flexible hours to support work-life balance.</div></div>
-        <div class="benefit-card fade-up stagger-2"><div class="benefit-icon">🏆</div><div class="benefit-title">Recognition Programs</div><div class="benefit-text">Engineer of the Quarter awards, project excellence recognition, and clear paths to leadership roles.</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- OPEN POSITIONS -->
   <section class="section">
     <div class="container">
-      <div class="text-center fade-up" style="margin-bottom:40px">
-        <div class="section-eyebrow">Join the Team</div>
-        <h2 class="section-title mx-auto">Open <em>Positions</em></h2>
+      <div class="text-center fade-up" style="margin-bottom:56px">
+        <div class="section-eyebrow">Resources & Documentation</div>
+        <h2 class="section-title mx-auto">Download <em>Resources</em></h2>
+        <p class="section-sub mx-auto">Technical guides, datasheets, white papers, and reference architectures to support your engineering work.</p>
       </div>
-      <div class="jobs-list">
-        <div class="job-card fade-up"><div><div class="job-title">Senior DCS Engineer – Yokogawa/Honeywell</div><div class="job-meta"><span class="job-meta-item">📍 Bengaluru / Site Rotational</span><span class="job-meta-item">💼 8+ Years</span><span class="job-meta-item">🏭 Oil & Gas / Petrochemical</span></div></div><span class="job-type full">Full-time</span></div>
-        <div class="job-card fade-up stagger-1"><div><div class="job-title">Instrumentation Engineer – P&ID & Datasheets</div><div class="job-meta"><span class="job-meta-item">📍 Bengaluru</span><span class="job-meta-item">💼 4–7 Years</span><span class="job-meta-item">🏭 Chemical / Refinery</span></div></div><span class="job-type full">Full-time</span></div>
-        <div class="job-card fade-up stagger-2"><div><div class="job-title">IIoT & Digital Solutions Architect</div><div class="job-meta"><span class="job-meta-item">📍 Bengaluru (Hybrid)</span><span class="job-meta-item">💼 6+ Years</span><span class="job-meta-item">🏭 Cross-industry</span></div></div><span class="job-type full">Full-time</span></div>
-        <div class="job-card fade-up stagger-3"><div><div class="job-title">OT Cybersecurity Consultant (IEC 62443)</div><div class="job-meta"><span class="job-meta-item">📍 Remote / Bengaluru</span><span class="job-meta-item">💼 5+ Years</span><span class="job-meta-item">🏭 Critical Infrastructure</span></div></div><span class="job-type contract">Contract</span></div>
-        <div class="job-card fade-up stagger-4"><div><div class="job-title">PLC Programmer – Siemens TIA Portal</div><div class="job-meta"><span class="job-meta-item">📍 Bengaluru / Site</span><span class="job-meta-item">💼 3–6 Years</span><span class="job-meta-item">🏭 Manufacturing / Food</span></div></div><span class="job-type full">Full-time</span></div>
-        <div class="job-card fade-up stagger-1"><div><div class="job-title">Project Manager – Industrial Automation</div><div class="job-meta"><span class="job-meta-item">📍 Bengaluru</span><span class="job-meta-item">💼 10+ Years</span><span class="job-meta-item">🏭 Multi-industry</span></div></div><span class="job-type full">Full-time</span></div>
+      <div class="docs-grid">
+        <div class="doc-card fade-up stagger-1">
+          <div class="doc-icon">📋</div>
+          <div class="doc-title">Technical Reference Guide</div>
+          <div class="doc-desc">Comprehensive guide to VPMPL's engineering standards, best practices, and technical specifications for all major automation platforms.</div>
+          <div class="doc-download">↓ Download PDF</div>
+        </div>
+        <div class="doc-card fade-up stagger-2">
+          <div class="doc-icon">🏗️</div>
+          <div class="doc-title">DCS Architecture Handbook</div>
+          <div class="doc-desc">Detailed guidance on designing robust distributed control systems with redundancy, failover, and high-availability patterns.</div>
+          <div class="doc-download">↓ Download PDF</div>
+        </div>
+        <div class="doc-card fade-up stagger-3">
+          <div class="doc-icon">🔧</div>
+          <div class="doc-title">Instrumentation Sizing Guide</div>
+          <div class="doc-desc">Step-by-step methodology for instrument selection, sizing, and specification for water and process applications.</div>
+          <div class="doc-download">↓ Download PDF</div>
+        </div>
+        <div class="doc-card fade-up stagger-4">
+          <div class="doc-icon">🛡️</div>
+          <div class="doc-title">OT Security Framework</div>
+          <div class="doc-desc">Practical guide to implementing IEC 62443 compliance and building secure industrial control system architectures.</div>
+          <div class="doc-download">↓ Download PDF</div>
+        </div>
+        <div class="doc-card fade-up stagger-1">
+          <div class="doc-icon">🌐</div>
+          <div class="doc-title">Industry 4.0 Playbook</div>
+          <div class="doc-desc">Roadmap for digital transformation, IIoT integration, and digital twin implementation in industrial environments.</div>
+          <div class="doc-download">↓ Download PDF</div>
+        </div>
+        <div class="doc-card fade-up stagger-2">
+          <div class="doc-icon">📊</div>
+          <div class="doc-title">SCADA System Design</div>
+          <div class="doc-desc">Complete reference for SCADA architecture, HMI design, data historian integration, and alarm management strategies.</div>
+          <div class="doc-download">↓ Download PDF</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- APPLICATION FORM -->
   <section class="section section-alt">
     <div class="container">
-      <div style="max-width:640px;margin:0 auto">
-        <div class="text-center fade-up" style="margin-bottom:40px">
-          <div class="section-eyebrow">Apply Now</div>
-          <h2 class="section-title mx-auto">Send Your <em>Application</em></h2>
-        </div>
-        <div class="apply-form fade-up stagger-1">
-          <div class="form-row">
-            <div class="form-group"><label class="form-label">First Name</label><input type="text" class="form-input" placeholder="Ravi"></div>
-            <div class="form-group"><label class="form-label">Last Name</label><input type="text" class="form-input" placeholder="Sharma"></div>
+      <div class="text-center fade-up" style="margin-bottom:48px">
+        <div class="section-eyebrow">Getting Support</div>
+        <h2 class="section-title mx-auto">Dedicated <em>Support</em></h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card fade-up stagger-1">
+          <div class="why-num">🎯</div>
+          <div>
+            <div class="why-title">Technical Support</div>
+            <div class="why-text">24/7 support for active projects with dedicated engineering team. Email: support@vpmpl.in | Phone: +91 80 4567 8901</div>
           </div>
-          <div class="form-group"><label class="form-label">Email Address</label><input type="email" class="form-input" placeholder="ravi.sharma@email.com"></div>
-          <div class="form-group"><label class="form-label">Phone Number</label><input type="tel" class="form-input" placeholder="+91 98765 43210"></div>
-          <div class="form-group"><label class="form-label">Position Applying For</label><select class="form-select"><option value="">Select a position...</option><option>Senior DCS Engineer</option><option>Instrumentation Engineer</option><option>IIoT & Digital Solutions Architect</option><option>OT Cybersecurity Consultant</option><option>PLC Programmer</option><option>Project Manager</option><option>Other / General Inquiry</option></select></div>
-          <div class="form-group"><label class="form-label">Years of Experience</label><select class="form-select"><option>0–2 Years</option><option>3–5 Years</option><option>6–10 Years</option><option>10+ Years</option></select></div>
-          <div class="form-group"><label class="form-label">Cover Letter / Message</label><textarea class="form-textarea" placeholder="Tell us about your relevant experience and why you want to join VPMPL..."></textarea></div>
-          <button class="btn-green" onclick="submitCareerForm()" style="width:100%;justify-content:center;padding:14px">Submit Application →</button>
-          <div class="success-msg" id="careerSuccess">✓ Thank you! Your application has been received. Our talent team will be in touch within 5 business days.</div>
+        </div>
+        <div class="why-card fade-up stagger-2">
+          <div class="why-num">📚</div>
+          <div>
+            <div class="why-title">Knowledge Base</div>
+            <div class="why-text">Extensive library of technical articles, FAQs, troubleshooting guides, and best practice documentation.</div>
+          </div>
+        </div>
+        <div class="why-card fade-up stagger-3">
+          <div class="why-num">👥</div>
+          <div>
+            <div class="why-title">Community Forum</div>
+            <div class="why-text">Connect with VPMPL engineers and other automation professionals. Share solutions, ask questions, and collaborate on challenges.</div>
+          </div>
+        </div>
+        <div class="why-card fade-up stagger-1">
+          <div class="why-num">📖</div>
+          <div>
+            <div class="why-title">Training Programs</div>
+            <div class="why-text">Live and on-demand technical training in DCS, SCADA, PLC programming, and functional safety for teams at all levels.</div>
+          </div>
+        </div>
+        <div class="why-card fade-up stagger-2">
+          <div class="why-num">🔄</div>
+          <div>
+            <div class="why-title">Regular Updates</div>
+            <div class="why-text">Stay current with industry trends, technology updates, and best practices through our regular newsletters and webinars.</div>
+          </div>
+        </div>
+        <div class="why-card fade-up stagger-3">
+          <div class="why-num">🤝</div>
+          <div>
+            <div class="why-title">Partner Network</div>
+            <div class="why-text">Access to our ecosystem of certified partners, technology vendors, and integrators for extended capabilities.</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-</div><!-- end careers -->
 
+  <section class="cta-section"><div class="container"><h2 class="cta-title">Need Technical Assistance?</h2><p class="cta-sub">Our support team is here to help with your questions and challenges.</p><div class="cta-btns"><button class="btn-primary" onclick="navigate('contact')">Contact Support →</button></div></div></section>
+</div>
 
-<!-- ===================== CONTACT PAGE ===================== -->
-<div class="page" id="page-contact">
+<div class="page" id="page-login">
+  <div class="about-hero">
+    <div class="container">
+      <div class="breadcrumb"><span onclick="navigate('home')">Home</span> / Login</div>
+      <h1 class="page-hero-title">Client Portal</h1>
+      <p class="page-hero-sub">Secure access to project documentation, technical resources, and account information.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div style="max-width:420px;margin:0 auto">
+        <div class="login-form fade-up">
+          <div class="login-form-title">Sign In</div>
+          <div class="login-form-sub">Access your VPMPL account</div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-input" placeholder="your@company.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-input" placeholder="••••••••">
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;font-size:13px">
+            <label style="display:flex;gap:6px;cursor:pointer"><input type="checkbox" style="cursor:pointer">Remember me</label>
+            <span style="color:var(--green);cursor:pointer">Forgot password?</span>
+          </div>
+          <button class="btn-green" style="width:100%;justify-content:center;padding:14px" onclick="alert('Portal login - redirect to authentication system')">Sign In →</button>
+          <div style="text-align:center;margin-top:20px;font-size:13px;color:var(--gray-text)">
+            Don't have an account? <span style="color:var(--green);cursor:pointer">Contact us for access</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="text-center fade-up" style="margin-bottom:48px">
+        <div class="section-eyebrow">Portal Features</div>
+        <h2 class="section-title mx-auto">What's <em>Available</em></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon">📄</div>
+          <div class="service-name">Documentation</div>
+          <div class="service-desc">Access all project documentation, datasheets, loop diagrams, and technical specifications related to your projects.</div>
+        </div>
+        <div class="service-card fade-up stagger-2">
+          <div class="service-icon">📊</div>
+          <div class="service-name">Project Status</div>
+          <div class="service-desc">Real-time project tracking, milestone progress, deliverables status, and timeline management.</div>
+        </div>
+        <div class="service-card fade-up stagger-3">
+          <div class="service-icon">🎟️</div>
+          <div class="service-name">Support Tickets</div>
+          <div class="service-desc">Submit and track technical support requests, issues, and enhancement requests with real-time status updates.</div>
+        </div>
+        <div class="service-card fade-up stagger-1">
+          <div class="service-icon">📚</div>
+          <div class="service-name">Knowledge Base</div>
+          <div class="service-desc">Searchable library of technical articles, FAQs, best practices, and troubleshooting guides.</div>
+        </div>
+        <div class="service-card fade-up stagger-2">
+          <div class="service-icon">📅</div>
+          <div class="service-name">Events & Training</div>
+          <div class="service-desc">Register for webinars, training sessions, and community events. Access recorded sessions on-demand.</div>
+        </div>
+        <div class="service-card fade-up stagger-3">
+          <div class="service-icon">👤</div>
+          <div class="service-name">Account Management</div>
+          <div class="service-desc">Manage team access, licenses, subscription details, and account settings in one place.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-contact" style="display:none">
   <div class="about-hero">
     <div class="container">
       <div class="breadcrumb"><span onclick="navigate('home')">Home</span> / Contact</div>
       <h1 class="page-hero-title">Let's Talk Engineering</h1>
-      <p class="page-hero-sub">Reach Srinivas Prasad K S directly. With 36 years of automation experience, he personally responds to project inquiries — usually within the same business day.</p>
+      <p class="page-hero-sub">Reach Srinivas Prasad K S directly. With 36 years of experience, he personally reviews every inquiry.</p>
     </div>
   </div>
   <section class="section">
@@ -1012,22 +1130,21 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
       <div class="contact-grid">
         <div class="contact-info-card fade-up">
           <div class="contact-info-title">Get In Touch</div>
-          <div class="contact-info-sub">Our team is based in Bengaluru with field engineers across major industrial hubs in India and internationally.</div>
+          <div class="contact-info-sub">Our team is based in Bengaluru with field presence across major industrial hubs.</div>
           <ul class="contact-items">
             <li class="contact-item"><div class="contact-item-icon">📍</div><div><div class="contact-item-lbl">Office Address</div><div class="contact-item-val">#42, 3rd Floor, Prestige Meridian II<br>MG Road, Bengaluru – 560 001<br>Karnataka, India</div></div></li>
-            <li class="contact-item"><div class="contact-item-icon">📞</div><div><div class="contact-item-lbl">Phone</div><div class="contact-item-val">+91 80 4567 8901<br>+91 98456 12345 (Mobile)</div></div></li>
+            <li class="contact-item"><div class="contact-item-icon">📞</div><div><div class="contact-item-lbl">Phone</div><div class="contact-item-val">+91 80 4567 8901<br>+91 98456 12345</div></div></li>
             <li class="contact-item"><div class="contact-item-icon">✉</div><div><div class="contact-item-lbl">Email</div><div class="contact-item-val">info@vpmpl.in<br>projects@vpmpl.in</div></div></li>
             <li class="contact-item"><div class="contact-item-icon">⏰</div><div><div class="contact-item-lbl">Business Hours</div><div class="contact-item-val">Mon–Sat: 9:00 AM – 6:30 PM IST<br>24/7 Support for active projects</div></div></li>
           </ul>
           <div class="map-placeholder">
             <div class="map-icon">🗺</div>
             <div class="map-text">MG Road, Bengaluru, Karnataka</div>
-            <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-top:4px">Google Maps integration available</div>
           </div>
         </div>
         <div class="contact-form fade-up stagger-2">
           <div class="contact-form-title">Send Us a Message</div>
-          <div class="contact-form-sub">Tell us about your project or inquiry — our engineering team will respond promptly.</div>
+          <div class="contact-form-sub">Tell us about your project or inquiry.</div>
           <div class="form-row">
             <div class="form-group"><label class="form-label">Your Name *</label><input type="text" class="form-input" placeholder="Full name"></div>
             <div class="form-group"><label class="form-label">Company *</label><input type="text" class="form-input" placeholder="Company name"></div>
@@ -1036,19 +1153,17 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
             <div class="form-group"><label class="form-label">Email *</label><input type="email" class="form-input" placeholder="your@company.com"></div>
             <div class="form-group"><label class="form-label">Phone</label><input type="tel" class="form-input" placeholder="+91 ..."></div>
           </div>
-          <div class="form-group"><label class="form-label">Inquiry Type</label><select class="form-select"><option>Project Inquiry</option><option>Technical Consultation</option><option>Vendor Registration</option><option>Career Inquiry</option><option>General Information</option></select></div>
+          <div class="form-group"><label class="form-label">Inquiry Type</label><select class="form-select"><option>Project Inquiry</option><option>Technical Consultation</option><option>Vendor Registration</option><option>General Information</option></select></div>
           <div class="form-group"><label class="form-label">Industry</label><select class="form-select"><option>Oil & Gas</option><option>Chemical / Petrochemical</option><option>Power Generation</option><option>Water & Wastewater</option><option>Manufacturing</option><option>Pharmaceutical</option><option>Food & Beverage</option><option>Mining & Metals</option><option>Other</option></select></div>
           <div class="form-group"><label class="form-label">Message *</label><textarea class="form-textarea" placeholder="Describe your project or inquiry..."></textarea></div>
           <button class="btn-green" onclick="submitContactForm()" style="width:100%;justify-content:center;padding:14px">Send Message →</button>
-          <div class="success-msg" id="contactSuccess">✓ Message sent! Our engineering team will get back to you within one business day. For urgent inquiries, please call +91 80 4567 8901.</div>
+          <div class="success-msg" id="contactSuccess">✓ Message sent! Our engineering team will get back to you within one business day.</div>
         </div>
       </div>
     </div>
   </section>
-</div><!-- end contact -->
+</div>
 
-
-<!-- FOOTER -->
 <footer id="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -1057,7 +1172,7 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
           <div class="footer-logo-box"><svg viewBox="0 0 24 24" fill="#fff" width="18" height="18"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.2l7.7 3.8-7.7 3.8-7.7-3.8L12 4.2zm-8 5.4l7 3.4v6.8l-7-3.4V9.6zm9 10.2v-6.8l7-3.4v6.8l-7 3.4z"/></svg></div>
           <div class="footer-logo-text">VPMPL<span>.</span></div>
         </div>
-        <p class="footer-desc">Process Instrumentation &amp; Automation Solutions for Water, Wastewater and Process Industries. Founder-led. Specialist. Proven.</p>
+        <p class="footer-desc">Process Instrumentation & Automation Solutions for Water, Wastewater and Process Industries. Founder-led. Specialist. Proven.</p>
         <div class="footer-socials">
           <div class="social-btn" title="LinkedIn">in</div>
           <div class="social-btn" title="Twitter">𝕏</div>
@@ -1069,29 +1184,29 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
         <ul class="footer-links">
           <li onclick="navigate('about')">About Us</li>
           <li onclick="navigate('about')">Leadership</li>
-          <li onclick="navigate('about')">Certifications</li>
-          <li onclick="navigate('careers')">Careers</li>
           <li onclick="navigate('contact')">Contact</li>
+          <li>Terms of Service</li>
+          <li>Privacy Policy</li>
         </ul>
       </div>
       <div>
         <div class="footer-col-title">Services</div>
         <ul class="footer-links">
-          <li onclick="navigate('services')">Process Automation</li>
-          <li onclick="navigate('services')">Instrumentation</li>
-          <li onclick="navigate('services')">DCS & SCADA</li>
-          <li onclick="navigate('services')">OT Cybersecurity</li>
-          <li onclick="navigate('services')">Industry 4.0</li>
+          <li onclick="navigate('products')">Process Automation</li>
+          <li onclick="navigate('products')">Instrumentation</li>
+          <li onclick="navigate('products')">DCS & SCADA</li>
+          <li onclick="navigate('solutions')">Digital Solutions</li>
+          <li onclick="navigate('solutions')">Safety Systems</li>
         </ul>
       </div>
       <div>
-        <div class="footer-col-title">Industries</div>
+        <div class="footer-col-title">Resources</div>
         <ul class="footer-links">
-          <li onclick="navigate('industries')">Oil & Gas</li>
-          <li onclick="navigate('industries')">Chemical</li>
-          <li onclick="navigate('industries')">Power</li>
-          <li onclick="navigate('industries')">Water Treatment</li>
-          <li onclick="navigate('industries')">Pharmaceutical</li>
+          <li onclick="navigate('industries')">Industries</li>
+          <li onclick="navigate('projects')">Projects</li>
+          <li onclick="navigate('support')">Support & Docs</li>
+          <li onclick="navigate('login')">Client Portal</li>
+          <li>Blog & News</li>
         </ul>
       </div>
     </div>
@@ -1106,17 +1221,15 @@ footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
 </footer>
 
 <script>
-// ---- DATA ----
 const projectsData = [
-  {id:1,name:'Refinery DCS Migration',client:'HPCL Vizag Refinery',category:'control',tags:['control','automation'],industry:'Oil & Gas',desc:'Migration of legacy Foxboro DCS to Yokogawa CENTUM VP across 8 process units — 2,200 I/O, zero unplanned downtime during cutover.',year:'2023',duration:'18 months',bg:'linear-gradient(135deg,#1a2f1a,#2d5a27)',emoji:'🏭'},
-  {id:2,name:'Petrochemical Plant SCADA',client:'Deepak Nitrite Ltd',category:'scada',tags:['scada','digitalization'],industry:'Chemical',desc:'Enterprise SCADA system on Ignition platform for 3-plant complex, real-time production KPIs, alarm rationalization, and OPC-UA historian integration.',year:'2023',duration:'12 months',bg:'linear-gradient(135deg,#1a2030,#263450)',emoji:'📊'},
-  {id:3,name:'Water Treatment SCADA Network',client:'Bengaluru Water Board',category:'scada',tags:['scada','instrumentation'],industry:'Water',desc:'SCADA and telemetry network for 24 pumping stations and 6 treatment plants covering 340 km of pipeline, remote monitoring with 4G/MPLS redundancy.',year:'2022',duration:'24 months',bg:'linear-gradient(135deg,#0f2a2a,#1a4040)',emoji:'💧'},
-  {id:4,name:'Pharmaceutical Batch Automation',client:'Sun Pharma – Halol Site',category:'automation',tags:['automation','control'],industry:'Pharma',desc:'ISA-88 batch automation with GMP compliance, 21 CFR Part 11 e-signatures, automated batch records, and full IQ/OQ/PQ validation support.',year:'2023',duration:'10 months',bg:'linear-gradient(135deg,#0f1a2a,#1a2a40)',emoji:'💊'},
-  {id:5,name:'Gas Processing Plant Automation',client:'ONGC Hazira',category:'automation',tags:['automation','instrumentation'],industry:'Oil & Gas',desc:'Full process automation for 2 MMSCMD gas processing trains — PLC-based control with Siemens SIMATIC, SIS engineering to SIL 2 requirements.',year:'2022',duration:'16 months',bg:'linear-gradient(135deg,#2a1a1a,#4a2020)',emoji:'⚡'},
-  {id:6,name:'Digital Twin – Polymer Plant',client:'Reliance Industries',category:'digitalization',tags:['digitalization'],industry:'Petrochemical',desc:'First-of-kind digital twin for a PE/PP polymerization unit enabling real-time process simulation, what-if analysis, and predictive quality control.',year:'2023',duration:'8 months',bg:'linear-gradient(135deg,#1a1a30,#282840)',emoji:'🌐'},
-  {id:7,name:'Instrumentation Package – FPSO',client:'L&T Hydrocarbon Engineering',category:'instrumentation',tags:['instrumentation'],industry:'Oil & Gas',desc:'Complete instrumentation engineering package for a Floating Production Storage and Offloading vessel — 4,800 instruments, hook-up drawings, and loop folios.',year:'2021',duration:'14 months',bg:'linear-gradient(135deg,#1a2f1a,#1a3a25)',emoji:'🛢'},
-  {id:8,name:'IIoT Platform – Cement Plant',client:'UltraTech Cement',category:'digitalization',tags:['digitalization','scada'],industry:'Manufacturing',desc:'Edge-to-cloud IIoT architecture connecting 1,200 sensors to Azure IoT Hub, with predictive maintenance models reducing unplanned downtime by 34%.',year:'2022',duration:'9 months',bg:'linear-gradient(135deg,#2a1a2a,#3a2040)',emoji:'🔩'},
-  {id:9,name:'OT Security Assessment & Hardening',client:'BPCL – Mumbai Refinery',category:'control',tags:['control'],industry:'Oil & Gas',desc:'Comprehensive IEC 62443 gap assessment, network segmentation design, and OT security hardening for a 120 MMTPA refinery control network.',year:'2023',duration:'6 months',bg:'linear-gradient(135deg,#1a2030,#1a2840)',emoji:'🔐'},
+  {id:1,name:'Refinery DCS Migration',client:'HPCL Vizag Refinery',category:'control',tags:['control','automation'],industry:'Oil & Gas',desc:'Migration of legacy Foxboro DCS to Yokogawa CENTUM VP across 8 process units.',year:'2023',duration:'18 months',bg:'linear-gradient(135deg,#1a2f1a,#2d5a27)',emoji:'🏭'},
+  {id:2,name:'Petrochemical Plant SCADA',client:'Deepak Nitrite Ltd',category:'scada',tags:['scada','digitalization'],industry:'Chemical',desc:'Enterprise SCADA system on Ignition platform for 3-plant complex.',year:'2023',duration:'12 months',bg:'linear-gradient(135deg,#1a2030,#263450)',emoji:'📊'},
+  {id:3,name:'Water Treatment SCADA Network',client:'Bengaluru Water Board',category:'scada',tags:['scada','instrumentation'],industry:'Water',desc:'SCADA and telemetry network for 24 pumping stations and 6 treatment plants.',year:'2022',duration:'24 months',bg:'linear-gradient(135deg,#0f2a2a,#1a4040)',emoji:'💧'},
+  {id:4,name:'Pharmaceutical Batch Automation',client:'Sun Pharma – Halol Site',category:'automation',tags:['automation','control'],industry:'Pharma',desc:'ISA-88 batch automation with GMP compliance and e-signatures.',year:'2023',duration:'10 months',bg:'linear-gradient(135deg,#0f1a2a,#1a2a40)',emoji:'💊'},
+  {id:5,name:'Gas Processing Plant Automation',client:'ONGC Hazira',category:'automation',tags:['automation','instrumentation'],industry:'Oil & Gas',desc:'Full process automation for 2 MMSCMD gas processing trains.',year:'2022',duration:'16 months',bg:'linear-gradient(135deg,#2a1a1a,#4a2020)',emoji:'⚡'},
+  {id:6,name:'Digital Twin – Polymer Plant',client:'Reliance Industries',category:'digitalization',tags:['digitalization'],industry:'Petrochemical',desc:'First-of-kind digital twin for polymerization unit.',year:'2023',duration:'8 months',bg:'linear-gradient(135deg,#1a1a30,#282840)',emoji:'🌐'},
+  {id:7,name:'Instrumentation Package – FPSO',client:'L&T Hydrocarbon',category:'instrumentation',tags:['instrumentation'],industry:'Oil & Gas',desc:'Complete instrumentation engineering for Floating Production Storage vessel.',year:'2021',duration:'14 months',bg:'linear-gradient(135deg,#1a2f1a,#1a3a25)',emoji:'🛢'},
+  {id:8,name:'IIoT Platform – Cement Plant',client:'UltraTech Cement',category:'digitalization',tags:['digitalization','scada'],industry:'Manufacturing',desc:'Edge-to-cloud IIoT architecture reducing unplanned downtime by 34%.',year:'2022',duration:'9 months',bg:'linear-gradient(135deg,#2a1a2a,#3a2040)',emoji:'🔩'},
 ];
 
 let currentFilter = 'all';
@@ -1128,7 +1241,7 @@ function renderProjects() {
   const search = currentSearch.toLowerCase();
   const filtered = projectsData.filter(p => {
     const matchFilter = currentFilter === 'all' || p.tags.includes(currentFilter);
-    const matchSearch = !search || p.name.toLowerCase().includes(search) || p.client.toLowerCase().includes(search) || p.industry.toLowerCase().includes(search) || p.desc.toLowerCase().includes(search);
+    const matchSearch = !search || p.name.toLowerCase().includes(search) || p.client.toLowerCase().includes(search) || p.industry.toLowerCase().includes(search);
     return matchFilter && matchSearch;
   });
   if(filtered.length === 0) { grid.innerHTML=''; noResults.style.display='block'; return; }
@@ -1166,18 +1279,16 @@ function filterProjects() {
   renderProjects();
 }
 
-// ---- NAVIGATION ----
 function navigate(page) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById('page-' + page).classList.add('active');
-  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
   window.scrollTo({top:0,behavior:'instant'});
   if(page === 'projects') renderProjects();
   updateNavStyle();
   observeElements();
+  toggleMobile();
 }
 
-// ---- NAVBAR ----
 function updateNavStyle() {
   const nav = document.getElementById('navbar');
   const activePage = document.querySelector('.page.active').id;
@@ -1199,7 +1310,6 @@ function toggleMobile() {
   document.getElementById('mobileMenu').classList.toggle('open');
 }
 
-// ---- COUNTER ANIMATION ----
 function animateCounters() {
   document.querySelectorAll('.counter').forEach(el => {
     const target = parseInt(el.dataset.target);
@@ -1214,7 +1324,6 @@ function animateCounters() {
   });
 }
 
-// ---- SCROLL ANIMATIONS ----
 function observeElements() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -1224,29 +1333,16 @@ function observeElements() {
   document.querySelectorAll('.fade-up:not(.visible), .fade-in:not(.visible)').forEach(el => observer.observe(el));
 }
 
-// ---- FORM SUBMITS ----
 function submitContactForm() {
   const s = document.getElementById('contactSuccess');
   s.classList.add('show');
-  setTimeout(() => s.classList.remove('show'), 6000);
-}
-function submitCareerForm() {
-  const s = document.getElementById('careerSuccess');
-  s.classList.add('show');
-  setTimeout(() => s.classList.remove('show'), 6000);
+  setTimeout(() => s.classList.remove('show'), 5000);
 }
 
-// ---- INIT ----
 document.addEventListener('DOMContentLoaded', () => {
   observeElements();
   updateNavStyle();
   setTimeout(animateCounters, 600);
-  setTimeout(() => {
-    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if(rect.top < window.innerHeight) el.classList.add('visible');
-    });
-  }, 100);
 });
 </script>
 </body>
