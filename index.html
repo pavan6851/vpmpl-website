@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vaasudeva Process Management Pvt Ltd </title>
+<title>Vaasudeva Process Management – Process Instrumentation & Automation Specialists</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --green:#0F7A5A;
-  --green-dark:#0A5A43;
-  --green-light:#19A974;
-  --green-pale:#E8F5F0;
-  --green-mid:#0D6B4F;
+  --green:#7CC242;
+  --green-dark:#4E8F1F;
+  --green-light:#A6D96A;
+  --green-pale:#F1F9E8;
+  --green-mid:#169E6A;
   --white:#FFFFFF;
   --dark:#1A1A1A;
   --gray:#F5F7F8;
@@ -42,7 +42,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 /* NAV */
 #navbar{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--nav-h);display:flex;align-items:center;transition:all 0.3s ease;background:transparent}
 #navbar.scrolled{background:#fff;box-shadow:0 2px 20px rgba(0,0,0,0.08)}
-#navbar.dark-bg{background:rgba(10,34,22,0.95);backdrop-filter:blur(12px)}
+#navbar.dark-bg{background:rgba(8,43,26,0.96);backdrop-filter:blur(12px)}
 .nav-inner{max-width:1320px;margin:0 auto;padding:0 32px;width:100%;display:flex;align-items:center;justify-content:space-between}
 .nav-logo{display:flex;align-items:center;gap:10px}
 .nav-logo-icon{width:38px;height:38px;background:var(--green);border-radius:8px;display:flex;align-items:center;justify-content:center}
@@ -62,7 +62,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .hamburger{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer}
 .hamburger span{width:24px;height:2px;background:#fff;transition:all 0.3s;border-radius:2px;display:block}
 #navbar.scrolled .hamburger span{background:var(--dark)}
-.mobile-menu{display:none;position:fixed;inset:0;background:rgba(10,34,22,0.98);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:0}
+.mobile-menu{display:none;position:fixed;inset:0;background:rgba(8,43,26,0.98);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:0}
 .mobile-menu.open{display:flex}
 .mobile-link{font-family:var(--font-display);font-size:28px;font-weight:600;color:#fff;padding:16px 32px;cursor:pointer;transition:color 0.2s;text-align:center}
 .mobile-link:hover{color:var(--green-light)}
@@ -73,7 +73,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .page.active{display:block}
 
 /* HERO */
-.hero{min-height:100vh;background:#0A1C14;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero{min-height:100vh;background:#082B1A;display:flex;align-items:center;position:relative;overflow:hidden}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(15,122,90,0.08) 1px,transparent 1px),linear-gradient(90deg,rgba(15,122,90,0.08) 1px,transparent 1px);background-size:64px 64px;opacity:0.6}
 .hero-glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(15,122,90,0.3) 0%,transparent 70%);top:-100px;right:-100px;border-radius:50%}
 .hero-glow2{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(25,169,116,0.15) 0%,transparent 70%);bottom:100px;left:0;border-radius:50%}
@@ -134,7 +134,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
 .about-img-stack{position:relative;height:480px}
 .about-img-main{width:320px;height:380px;background:linear-gradient(135deg,var(--green-dark),var(--green));border-radius:16px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:absolute;top:0;left:0}
-.about-img-accent{width:200px;height:220px;background:linear-gradient(135deg,#0A1C14,var(--green-dark));border-radius:12px;display:flex;align-items:center;justify-content:center;position:absolute;bottom:0;right:0;border:4px solid #fff}
+.about-img-accent{width:200px;height:220px;background:linear-gradient(135deg,#082B1A,var(--green-dark));border-radius:12px;display:flex;align-items:center;justify-content:center;position:absolute;bottom:0;right:0;border:4px solid #fff}
 .about-img-svg{opacity:0.35}
 .about-badge{position:absolute;top:220px;left:280px;background:#fff;border-radius:12px;padding:12px 16px;box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:10px;z-index:2}
 .about-badge-icon{width:36px;height:36px;background:var(--green-pale);border-radius:8px;display:flex;align-items:center;justify-content:center}
@@ -185,14 +185,14 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 @keyframes scroll-logos{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
 /* CTA */
-.cta-section{background:linear-gradient(135deg,var(--green-dark) 0%,#0A1C14 60%,#061A10 100%);padding:100px 0;text-align:center;position:relative;overflow:hidden}
+.cta-section{background:linear-gradient(135deg,var(--green-dark) 0%,#082B1A 60%,#051A0E 100%);padding:100px 0;text-align:center;position:relative;overflow:hidden}
 .cta-section::before{content:'';position:absolute;width:500px;height:500px;background:radial-gradient(circle,rgba(25,169,116,0.2),transparent);top:-100px;right:-100px;border-radius:50%}
 .cta-title{font-family:var(--font-display);font-size:clamp(28px,4vw,48px);font-weight:700;color:#fff;letter-spacing:-0.5px;margin-bottom:16px;position:relative}
 .cta-sub{font-size:18px;color:rgba(255,255,255,0.65);margin-bottom:40px;position:relative}
 .cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative}
 
 /* FOOTER */
-footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
+footer{background:#082B1A;color:rgba(255,255,255,0.7);padding:72px 0 32px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px}
 .footer-brand{max-width:280px}
 .footer-logo-row{display:flex;align-items:center;gap:10px;margin-bottom:16px}
@@ -211,7 +211,7 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
 .footer-copy{font-size:13px;color:rgba(255,255,255,0.35)}
 
 /* ABOUT PAGE */
-.about-hero{background:linear-gradient(135deg,#0A1C14,var(--green-dark));padding:140px 0 80px;color:#fff;text-align:center}
+.about-hero{background:linear-gradient(135deg,#082B1A,var(--green-dark));padding:140px 0 80px;color:#fff;text-align:center}
 .page-hero-title{font-family:var(--font-display);font-size:clamp(36px,5vw,56px);font-weight:700;color:#fff;letter-spacing:-0.5px;margin-bottom:16px}
 .page-hero-sub{font-size:18px;color:rgba(255,255,255,0.65);max-width:580px;margin:0 auto}
 .breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:24px;justify-content:center}
@@ -323,7 +323,7 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
 
 /* CONTACT PAGE */
 .contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;align-items:start}
-.contact-info-card{background:linear-gradient(135deg,var(--green-dark),#0A1C14);border-radius:var(--radius);padding:40px;color:#fff;height:100%}
+.contact-info-card{background:linear-gradient(135deg,var(--green-dark),#082B1A);border-radius:var(--radius);padding:40px;color:#fff;height:100%}
 .contact-info-title{font-family:var(--font-display);font-size:24px;font-weight:700;color:#fff;margin-bottom:8px}
 .contact-info-sub{font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:32px;line-height:1.6}
 .contact-items{list-style:none;margin-bottom:36px}
@@ -444,16 +444,16 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     <div class="hero-glow2"></div>
     <div class="hero-inner">
       <div>
-        <div class="hero-badge fade-up"><div class="hero-badge-dot"></div>Industry 4.0 Ready Solutions</div>
-        <h1 class="hero-h1 fade-up stagger-1">Engineering Excellence for <em>Intelligent Industrial</em> Operations</h1>
-        <p class="hero-sub fade-up stagger-2">Delivering Process Automation, Instrumentation, Digital Transformation and Industrial Engineering Solutions across critical industries worldwide.</p>
+        <div class="hero-badge fade-up"><div class="hero-badge-dot"></div>Process Instrumentation & Automation Specialists</div>
+        <h1 class="hero-h1 fade-up stagger-1">Specialist Automation for <em>Water, Wastewater</em> &amp; Process Industries</h1>
+        <p class="hero-sub fade-up stagger-2">Founder-led by Srinivas Prasad K S with 36+ years of industrial automation experience. Delivering turnkey instrumentation, PLC/SCADA systems, and process control solutions for water, chemical, pharma, and process plants.</p>
         <div class="hero-btns fade-up stagger-3">
           <button class="btn-primary" onclick="navigate('services')">Explore Services →</button>
           <button class="btn-outline" onclick="navigate('contact')">Contact Us</button>
         </div>
         <div class="hero-stats fade-up stagger-4">
           <div class="hero-stat"><span class="hero-stat-num counter" data-target="350"><em>0</em>+</span><span class="hero-stat-lbl">Projects Delivered</span></div>
-          <div class="hero-stat"><span class="hero-stat-num counter" data-target="18"><em>0</em>+</span><span class="hero-stat-lbl">Years Experience</span></div>
+          <div class="hero-stat"><span class="hero-stat-num counter" data-target="36"><em>0</em>+</span><span class="hero-stat-lbl">Years Experience</span></div>
           <div class="hero-stat"><span class="hero-stat-num counter" data-target="120"><em>0</em>+</span><span class="hero-stat-lbl">Global Clients</span></div>
           <div class="hero-stat"><span class="hero-stat-num counter" data-target="85"><em>0</em>+</span><span class="hero-stat-lbl">Engineering Experts</span></div>
         </div>
@@ -519,19 +519,19 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
           </div>
           <div class="about-badge">
             <div class="about-badge-icon">🏆</div>
-            <div><div class="ab-val">18+</div><div class="ab-lbl">Years of Excellence</div></div>
+            <div><div class="ab-val">36+</div><div class="ab-lbl">Years of Expertise</div></div>
           </div>
         </div>
         <div class="fade-up stagger-2">
-          <div class="section-eyebrow">Who We Are</div>
-          <h2 class="section-title">Built on Engineering <em>Precision</em></h2>
-          <p style="font-size:16px;color:var(--gray-text);line-height:1.8;margin-bottom:16px">Vaasudeva Process Management Pvt Ltd (VPMPL) is a premier industrial engineering services company headquartered in India, with a global footprint spanning petrochemical, energy, pharmaceutical, and manufacturing sectors.</p>
-          <p style="font-size:16px;color:var(--gray-text);line-height:1.8;margin-bottom:24px">We combine deep domain expertise with cutting-edge digital technology to deliver end-to-end process automation, instrumentation engineering, and industrial digitalization solutions that drive real operational outcomes.</p>
+          <div class="section-eyebrow">Founder-Led. Specialist. Proven.</div>
+          <h2 class="section-title">36 Years of <em>Automation</em> Expertise</h2>
+          <p style="font-size:16px;color:var(--gray-text);line-height:1.8;margin-bottom:16px">Vaasudeva Process Management is led by <strong>Srinivas Prasad K S</strong>, with 36+ years of hands-on industrial automation experience across water treatment, chemical, pharma, and process industries. We are not a trading company — we are a specialist engineering solutions provider.</p>
+          <p style="font-size:16px;color:var(--gray-text);line-height:1.8;margin-bottom:24px">Our focus is narrow by design: process instrumentation, PLC/SCADA systems, analyser solutions, and turnkey automation projects for water &amp; wastewater and chemical/process industries — delivered with the discipline and quality that large EPCs expect.</p>
           <ul class="about-list">
-            <li><div class="about-check"><svg viewBox="0 0 12 9"><path d="M1 4l3.5 3.5L11 1"/></svg></div>End-to-end EPC and EPCM capabilities for industrial projects</li>
-            <li><div class="about-check"><svg viewBox="0 0 12 9"><path d="M1 4l3.5 3.5L11 1"/></svg></div>ISO 9001:2015 certified quality management systems</li>
-            <li><div class="about-check"><svg viewBox="0 0 12 9"><path d="M1 4l3.5 3.5L11 1"/></svg></div>Industry 4.0 and digital twin implementation expertise</li>
-            <li><div class="about-check"><svg viewBox="0 0 12 9"><path d="M1 4l3.5 3.5L11 1"/></svg></div>OT Cybersecurity and IEC 62443 compliance</li>
+            <li><div class="about-check"><svg viewBox="0 0 12 9"><path d="M1 4l3.5 3.5L11 1"/></svg></div>Primary expertise: Water &amp; Wastewater and Chemical/Process Industries</li>
+            <li><div class="about-check"><svg viewBox="0 0 12 9"><path d="M1 4l3.5 3.5L11 1"/></svg></div>Turnkey automation — from design through FAT, commissioning, and AMC</li>
+            <li><div class="about-check"><svg viewBox="0 0 12 9"><path d="M1 4l3.5 3.5L11 1"/></svg></div>Vendor-neutral: Siemens, ABB, Endress+Hauser, Yokogawa, Pepperl+Fuchs</li>
+            <li><div class="about-check"><svg viewBox="0 0 12 9"><path d="M1 4l3.5 3.5L11 1"/></svg></div>Solution proposals — not quotations. Architecture, IO list, FAT/SAT included</li>
           </ul>
           <button class="btn-green" onclick="navigate('about')">Our Story →</button>
         </div>
@@ -545,7 +545,7 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
       <div class="text-center fade-up">
         <div class="section-eyebrow">What We Do</div>
         <h2 class="section-title mx-auto">Comprehensive <em>Engineering</em> Services</h2>
-        <p class="section-sub mx-auto">From initial design through commissioning and beyond — we deliver complete lifecycle engineering services for complex industrial environments.</p>
+        <p class="section-sub mx-auto">Specialist engineering solutions for water &amp; wastewater treatment and chemical/process industries — delivered as complete turnkey packages, not product quotations.</p>
       </div>
       <div class="services-grid">
         <div class="service-card fade-up stagger-1">
@@ -597,7 +597,7 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
       <div class="text-center fade-up">
         <div class="section-eyebrow">Industries</div>
         <h2 class="section-title mx-auto">Serving <em>Critical</em> Industries</h2>
-        <p class="section-sub mx-auto">Deep domain expertise across the industries that power civilization.</p>
+        <p class="section-sub mx-auto">Primary focus: <strong>Water &amp; Wastewater</strong> and <strong>Chemical &amp; Process Industries</strong>. We also serve pharma, food &amp; beverage, power, and manufacturing — but our deepest references and installed base are in water and process.</p>
       </div>
       <div class="industries-grid">
         <div class="industry-card fade-up stagger-1"><div class="industry-icon">🛢</div><div class="industry-name">Oil & Gas</div><div class="industry-desc">Upstream, midstream, and downstream automation</div></div>
@@ -618,15 +618,15 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
       <div class="fade-up">
         <div class="section-eyebrow">Why VPMPL</div>
         <h2 class="section-title" style="max-width:540px">The Difference That <em>Matters</em></h2>
-        <p class="section-sub">What sets VPMPL apart is not just technical capability — it's the commitment to outcomes that drives every engagement.</p>
+        <p class="section-sub">Led by a founder with 36 years of automation experience, VPMPL brings senior engineering depth to every project — not junior teams learning on your site.</p>
       </div>
       <div class="why-grid">
-        <div class="why-card fade-up stagger-1"><div class="why-num">01</div><div><div class="why-title">Deep Domain Expertise</div><div class="why-text">18+ years of hands-on experience across complex industrial environments, giving us knowledge that no textbook can replicate.</div></div></div>
+        <div class="why-card fade-up stagger-1"><div class="why-num">01</div><div><div class="why-title">Founder-Led Engineering</div><div class="why-text">Srinivas Prasad K S brings 36 years of automation depth to every engagement. Clients deal with the expert, not a sales team — from first enquiry through final commissioning.</div></div></div>
         <div class="why-card fade-up stagger-2"><div class="why-num">02</div><div><div class="why-title">Vendor-Neutral Approach</div><div class="why-text">We work with all major DCS, SCADA, and PLC platforms, recommending what's best for your plant — not what generates us more margin.</div></div></div>
-        <div class="why-card fade-up stagger-3"><div class="why-num">03</div><div><div class="why-title">End-to-End Delivery</div><div class="why-text">From FEED and HAZOP through detailed design, procurement, FAT, commissioning, and O&M support — one partner for the full lifecycle.</div></div></div>
+        <div class="why-card fade-up stagger-3"><div class="why-num">03</div><div><div class="why-title">Solution Proposals, Not Quotations</div><div class="why-text">Every bid includes process understanding, architecture diagrams, IO list, FAT/SAT plan, and commissioning methodology — the documents large EPCs require to award with confidence.</div></div></div>
         <div class="why-card fade-up stagger-1"><div class="why-num">04</div><div><div class="why-title">Safety-First Culture</div><div class="why-text">SIL-rated design, IEC 62443 OT security, and ATEX/IECEx compliance built into every deliverable — because safety is not a feature, it's a foundation.</div></div></div>
         <div class="why-card fade-up stagger-2"><div class="why-num">05</div><div><div class="why-title">Digital-Ready Engineering</div><div class="why-text">Industry 4.0 frameworks, digital twin integration, and IIoT-enabled designs that future-proof your plant for the next decade.</div></div></div>
-        <div class="why-card fade-up stagger-3"><div class="why-num">06</div><div><div class="why-title">Proven Track Record</div><div class="why-text">350+ successfully delivered projects across 8 critical industries, with a client retention rate that speaks louder than any marketing.</div></div></div>
+        <div class="why-card fade-up stagger-3"><div class="why-num">06</div><div><div class="why-title">EPC-Ready Execution</div><div class="why-text">Structured project delivery trusted by VA Tech Wabag, Ion Exchange, Thermax, Tata Projects, and L&amp;T — the specialist automation partner behind large EPC water and process contracts.</div></div></div>
       </div>
     </div>
   </section>
@@ -641,26 +641,26 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     </div>
     <div class="clients-strip">
       <div class="clients-track" id="clientsTrack">
-        <div class="client-logo">Reliance Industries</div>
-        <div class="client-logo">HPCL</div>
-        <div class="client-logo">BPCL</div>
-        <div class="client-logo">ONGC</div>
-        <div class="client-logo">Tata Chemicals</div>
-        <div class="client-logo">L&T Hydrocarbon</div>
-        <div class="client-logo">IOCL</div>
+        <div class="client-logo">VA Tech Wabag</div>
+        <div class="client-logo">Ion Exchange</div>
+        <div class="client-logo">Thermax</div>
+        <div class="client-logo">Tata Projects</div>
+        <div class="client-logo">L&T</div>
         <div class="client-logo">Deepak Nitrite</div>
-        <div class="client-logo">NTPC</div>
-        <div class="client-logo">GAIL India</div>
-        <div class="client-logo">Reliance Industries</div>
-        <div class="client-logo">HPCL</div>
-        <div class="client-logo">BPCL</div>
-        <div class="client-logo">ONGC</div>
-        <div class="client-logo">Tata Chemicals</div>
-        <div class="client-logo">L&T Hydrocarbon</div>
-        <div class="client-logo">IOCL</div>
+        <div class="client-logo">Aarti Industries</div>
+        <div class="client-logo">SRF Limited</div>
+        <div class="client-logo">BWSSB</div>
+        <div class="client-logo">Jubilant Ingrevia</div>
+        <div class="client-logo">VA Tech Wabag</div>
+        <div class="client-logo">Ion Exchange</div>
+        <div class="client-logo">Thermax</div>
+        <div class="client-logo">Tata Projects</div>
+        <div class="client-logo">L&T</div>
         <div class="client-logo">Deepak Nitrite</div>
-        <div class="client-logo">NTPC</div>
-        <div class="client-logo">GAIL India</div>
+        <div class="client-logo">Aarti Industries</div>
+        <div class="client-logo">SRF Limited</div>
+        <div class="client-logo">BWSSB</div>
+        <div class="client-logo">Jubilant Ingrevia</div>
       </div>
     </div>
   </section>
@@ -669,8 +669,8 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
   <section class="cta-section fade-up">
     <div class="container">
       <div class="section-eyebrow" style="color:var(--green-light)">Let's Build Together</div>
-      <h2 class="cta-title">Ready to Transform Your Operations?</h2>
-      <p class="cta-sub">Partner with VPMPL for engineering excellence that delivers measurable operational impact.</p>
+      <h2 class="cta-title">Speak Directly with the Expert</h2>
+      <p class="cta-sub">With 36 years of automation experience, Srinivas Prasad K S personally reviews every project inquiry. No handoffs to junior staff — just focused engineering dialogue from day one.</p>
       <div class="cta-btns">
         <button class="btn-primary" onclick="navigate('contact')">Start a Conversation →</button>
         <button class="btn-outline" onclick="navigate('projects')">View Our Projects</button>
@@ -686,8 +686,8 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
   <div class="about-hero">
     <div class="container">
       <div class="breadcrumb"><span onclick="navigate('home')">Home</span> / About Us</div>
-      <h1 class="page-hero-title">Built on Two Decades of<br>Engineering Excellence</h1>
-      <p class="page-hero-sub">Our story is one of relentless precision, proven delivery, and a deep commitment to the industries that keep the world running.</p>
+      <h1 class="page-hero-title">36 Years of Industrial<br>Automation Excellence</h1>
+      <p class="page-hero-sub">Founded and led by Srinivas Prasad K S — a specialist automation engineer with experience that most consultancies cannot match at any organisational level.</p>
     </div>
   </div>
 
@@ -698,10 +698,16 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
         <div class="fade-up">
           <div class="section-eyebrow">Our Company</div>
           <h2 class="section-title">Vaasudeva Process Management <em>Pvt Ltd</em></h2>
-          <p style="font-size:16px;color:var(--gray-text);line-height:1.8;margin-bottom:20px">Founded in 2006, VPMPL has grown from a specialist instrumentation consultancy into a full-spectrum industrial engineering services company. With offices across India and project delivery experience spanning the Middle East, Southeast Asia, and Africa, we bring global perspective to local engineering challenges.</p>
-          <p style="font-size:16px;color:var(--gray-text);line-height:1.8">Our team of 85+ engineers brings domain depth across process automation, control system design, SCADA, and industrial digitalization — covering the entire plant lifecycle from conceptual design to decommissioning support.</p>
+          <p style="font-size:16px;color:var(--gray-text);line-height:1.8;margin-bottom:20px">Vaasudeva Process Management is a Bengaluru-based specialist automation engineering company founded and led by <strong>Srinivas Prasad K S</strong>, who brings 36+ years of direct industrial automation experience across water treatment, chemical manufacturing, pharma, and process industries. Unlike large system integrators where your project is handled by a junior team, at VPMPL you work with the founder and senior engineers on every engagement.</p>
+          <p style="font-size:16px;color:var(--gray-text);line-height:1.8">Our deliberate focus on <strong>Water &amp; Wastewater</strong> and <strong>Chemical/Process Industries</strong> means our engineers have accumulated genuinely deep application knowledge — the kind that prevents costly mistakes during design, saves time during commissioning, and earns client confidence on every project.</p>
         </div>
         <div class="fade-up stagger-2" style="display:flex;flex-direction:column;gap:20px">
+          <div style="background:linear-gradient(135deg,#082B1A,#0F4A2E);border-radius:var(--radius);padding:28px;margin-bottom:0">
+            <div style="font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green-light);margin-bottom:10px">Founder Profile</div>
+            <div style="font-size:22px;font-weight:700;color:#fff;font-family:var(--font-display);margin-bottom:4px">Srinivas Prasad K S</div>
+            <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-bottom:12px">Founder &amp; CEO — 36+ Years Industrial Automation</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7">Specialist expertise in process instrumentation, PLC/SCADA systems, analyser solutions, and turnkey project execution for water/wastewater and chemical industries. Senior-level capability that most consultancies only have at director level — applied directly on your project.</p>
+          </div>
           <div style="background:var(--green-pale);border:1px solid var(--border);border-radius:var(--radius);padding:28px">
             <div style="font-size:28px;margin-bottom:8px">🎯</div>
             <h3 style="font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--dark);margin-bottom:8px">Our Vision</h3>
@@ -717,15 +723,37 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     </div>
   </section>
 
+
+  <!-- OEM PARTNERS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="text-center fade-up" style="margin-bottom:48px">
+        <div class="section-eyebrow">Technology Partners</div>
+        <h2 class="section-title mx-auto">OEM <em>Partnerships</em></h2>
+        <p class="section-sub mx-auto">We work with all major automation and instrumentation vendors — recommending the right platform for your application, not the one that earns us more margin.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px">
+        <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;text-align:center;font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--gray-text)">Siemens</div>
+        <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;text-align:center;font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--gray-text)">ABB</div>
+        <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;text-align:center;font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--gray-text)">Endress+Hauser</div>
+        <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;text-align:center;font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--gray-text)">Yokogawa</div>
+        <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;text-align:center;font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--gray-text)">Schneider Electric</div>
+        <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;text-align:center;font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--gray-text)">WIKA</div>
+        <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;text-align:center;font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--gray-text)">Pepperl+Fuchs</div>
+        <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;text-align:center;font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--gray-text)">Honeywell</div>
+      </div>
+    </div>
+  </section>
+
   <!-- STATS BAND -->
   <div class="stats-band">
     <div class="container">
       <div class="stats-band-grid">
         <div><div class="sb-num">350+</div><div class="sb-lbl">Projects Delivered</div></div>
-        <div><div class="sb-num">18+</div><div class="sb-lbl">Years in Operation</div></div>
+        <div><div class="sb-num">36+</div><div class="sb-lbl">Years Experience</div></div>
         <div><div class="sb-num">85+</div><div class="sb-lbl">Engineering Experts</div></div>
         <div><div class="sb-num">120+</div><div class="sb-lbl">Global Clients</div></div>
-        <div><div class="sb-num">8</div><div class="sb-lbl">Industry Verticals</div></div>
+        <div><div class="sb-num">2</div><div class="sb-lbl">Primary Focus Sectors</div></div>
       </div>
     </div>
   </div>
@@ -779,7 +807,7 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
         <p class="section-sub mx-auto">Decades of combined experience driving engineering excellence.</p>
       </div>
       <div class="team-grid">
-        <div class="team-card fade-up stagger-1"><div class="team-img">👷</div><div class="team-body"><div class="team-name">Ramesh Vaasudeva</div><div class="team-role">Founder & Managing Director</div><div class="team-bio">25+ years in industrial automation. Former lead engineer at L&T and Honeywell. Drives VPMPL's strategic direction and technical standards.</div></div></div>
+        <div class="team-card fade-up stagger-1"><div class="team-img" style="background:linear-gradient(135deg,#082B1A,var(--green))">👷</div><div class="team-body"><div class="team-name">Srinivas Prasad K S</div><div class="team-role">Founder &amp; CEO</div><div class="team-bio">36+ years of industrial automation experience across water treatment, chemical, pharma, and process industries. The technical authority behind every VPMPL project — personally involved in engineering review, client proposals, and project execution.</div></div></div>
         <div class="team-card fade-up stagger-2"><div class="team-img">👩‍💼</div><div class="team-body"><div class="team-name">Priya Shankar</div><div class="team-role">Chief Technical Officer</div><div class="team-bio">IIT Bombay graduate with 20 years in DCS and process control. Oversees all technical delivery and quality assurance functions.</div></div></div>
         <div class="team-card fade-up stagger-3"><div class="team-img">👨‍💻</div><div class="team-body"><div class="team-name">Anand Kumar</div><div class="team-role">VP – Digital Solutions</div><div class="team-bio">Leads VPMPL's Industry 4.0 and IIoT practice. Former digital transformation lead at Emerson with expertise in digital twin and edge computing.</div></div></div>
         <div class="team-card fade-up stagger-4"><div class="team-img">👩‍🔬</div><div class="team-body"><div class="team-name">Meera Pillai</div><div class="team-role">Head – Instrumentation</div><div class="team-bio">Specialist in SIS, functional safety, and SIL verification. Certified TÜV Functional Safety Engineer with 18 years of field experience.</div></div></div>
@@ -797,7 +825,7 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     <div class="container">
       <div class="breadcrumb"><span onclick="navigate('home')">Home</span> / Services</div>
       <h1 class="page-hero-title">Engineering Services</h1>
-      <p class="page-hero-sub">End-to-end industrial engineering and automation services designed for complex, safety-critical environments.</p>
+      <p class="page-hero-sub">Specialist process instrumentation and automation services for water treatment and chemical/process plants — delivered as complete engineering solutions, not product quotations.</p>
     </div>
   </div>
   <section class="section">
@@ -805,12 +833,13 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
       <div class="services-detail-grid">
         <div class="svc-detail-card fade-up stagger-1"><div class="svc-detail-top"><div class="svc-detail-icon">⚙</div><div class="svc-detail-name">Process Automation</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Full lifecycle automation engineering from concept through commissioning. We design, configure, test, and commission automation systems that drive real operational improvement.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>PLC & PAC programming (Siemens, Allen-Bradley, Mitsubishi)</li><li><span class="svc-check">✓</span>Batch automation (ISA-88 compliant)</li><li><span class="svc-check">✓</span>Motor control and drive integration</li><li><span class="svc-check">✓</span>Safety PLC engineering and validation</li></ul><div class="svc-tags"><span class="svc-tag">Oil & Gas</span><span class="svc-tag">Chemical</span><span class="svc-tag">Pharma</span></div></div></div>
 
-        <div class="svc-detail-card fade-up stagger-2"><div class="svc-detail-top"><div class="svc-detail-icon">📡</div><div class="svc-detail-name">Instrumentation Engineering</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Comprehensive instrumentation services from instrument selection through commissioning data sheets, ensuring accurate measurement and reliable field signals.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>Instrument index and data sheets</li><li><span class="svc-check">✓</span>Loop diagrams and hook-up drawings</li><li><span class="svc-check">✓</span>Instrument location plans</li><li><span class="svc-check">✓</span>Calibration and commissioning procedures</li></ul><div class="svc-tags"><span class="svc-tag">Refinery</span><span class="svc-tag">Power</span><span class="svc-tag">Water</span></div></div></div>
+        <div class="svc-detail-card fade-up stagger-2"><div class="svc-detail-top"><div class="svc-detail-icon">📡</div><div class="svc-detail-name">Instrumentation Engineering</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Comprehensive process instrumentation services — from flow, pressure, temperature, and level selection through full datasheet packages, loop diagrams, and commissioning procedures for water treatment and process plants.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>Instrument index, datasheets, and specifications</li><li><span class="svc-check">✓</span>Loop diagrams and hook-up drawings</li><li><span class="svc-check">✓</span>Online water quality and gas analysers</li><li><span class="svc-check">✓</span>Hazardous area instrument selection (ATEX/IECEx)</li></ul><div class="svc-tags"><span class="svc-tag">Water Treatment</span><span class="svc-tag">Chemical</span><span class="svc-tag">Pharma</span></div></div></div>
 
         <div class="svc-detail-card fade-up stagger-3"><div class="svc-detail-top"><div class="svc-detail-icon">🖥</div><div class="svc-detail-name">DCS Solutions</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Vendor-agnostic DCS engineering across Honeywell Experion, ABB System 800xA, Yokogawa CENTUM VP, Emerson DeltaV, and Siemens PCS 7/neo platforms.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>Control narrative development</li><li><span class="svc-check">✓</span>DCS configuration and graphics</li><li><span class="svc-check">✓</span>FAT/SAT support and execution</li><li><span class="svc-check">✓</span>DCS migration and upgrade projects</li></ul><div class="svc-tags"><span class="svc-tag">Petrochemical</span><span class="svc-tag">Power</span></div></div></div>
 
         <div class="svc-detail-card fade-up stagger-1"><div class="svc-detail-top"><div class="svc-detail-icon">📊</div><div class="svc-detail-name">SCADA Solutions</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Custom SCADA system design, development, and commissioning for geographically distributed assets using Ignition, WinCC, iFIX, and InTouch platforms.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>SCADA architecture and design</li><li><span class="svc-check">✓</span>HMI/SCADA graphics development</li><li><span class="svc-check">✓</span>Historian and reporting integration</li><li><span class="svc-check">✓</span>Remote monitoring and alarm management</li></ul><div class="svc-tags"><span class="svc-tag">Water</span><span class="svc-tag">Oil & Gas</span><span class="svc-tag">Energy</span></div></div></div>
 
+        <div class="svc-detail-card fade-up stagger-1"><div class="svc-detail-top"><div class="svc-detail-icon">🧪</div><div class="svc-detail-name">Analyser Systems</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Selection, supply, integration, and commissioning of online process analysers for water quality monitoring, gas detection, and continuous emissions monitoring in treatment and process plants.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>Water quality analysers (pH, DO, turbidity, COD)</li><li><span class="svc-check">✓</span>Gas analysers and leak detection systems</li><li><span class="svc-check">✓</span>CEMS for emission compliance</li><li><span class="svc-check">✓</span>Analyser shelter design and integration</li></ul><div class="svc-tags"><span class="svc-tag">Water</span><span class="svc-tag">Chemical</span><span class="svc-tag">Environment</span></div></div></div>
         <div class="svc-detail-card fade-up stagger-2"><div class="svc-detail-top"><div class="svc-detail-icon">🔐</div><div class="svc-detail-name">OT Cybersecurity</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Industrial control system security assessment and hardening aligned to IEC 62443, NIST CSF, and NERC CIP standards for critical infrastructure protection.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>OT security risk assessment</li><li><span class="svc-check">✓</span>Network segmentation and zone design</li><li><span class="svc-check">✓</span>Patch management and vulnerability analysis</li><li><span class="svc-check">✓</span>IEC 62443 compliance gap analysis</li></ul><div class="svc-tags"><span class="svc-tag">Critical Infrastructure</span><span class="svc-tag">Utility</span></div></div></div>
 
         <div class="svc-detail-card fade-up stagger-3"><div class="svc-detail-top"><div class="svc-detail-icon">🌐</div><div class="svc-detail-name">Industry 4.0</div></div><div class="svc-detail-body"><p class="svc-detail-desc">Connecting OT and IT layers through IIoT platforms, edge computing, and cloud integration to unlock real-time visibility and data-driven decision making.</p><ul class="svc-benefits"><li><span class="svc-check">✓</span>IIoT sensor integration and edge computing</li><li><span class="svc-check">✓</span>Digital twin development</li><li><span class="svc-check">✓</span>Predictive maintenance platforms</li><li><span class="svc-check">✓</span>MES and ERP integration</li></ul><div class="svc-tags"><span class="svc-tag">Manufacturing</span><span class="svc-tag">Pharma</span></div></div></div>
@@ -831,7 +860,7 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     <div class="container">
       <div class="breadcrumb"><span onclick="navigate('home')">Home</span> / Industries</div>
       <h1 class="page-hero-title">Industries We Serve</h1>
-      <p class="page-hero-sub">Deep domain expertise built over 18 years of delivering automation and engineering solutions across critical industrial sectors.</p>
+      <p class="page-hero-sub">Primary expertise in Water &amp; Wastewater and Chemical/Process industries, built through 36+ years of hands-on project delivery. We serve additional sectors from this strong foundation.</p>
     </div>
   </div>
   <section class="section">
@@ -890,12 +919,12 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
 
 <!-- ===================== CAREERS PAGE ===================== -->
 <div class="page" id="page-careers">
-  <div class="about-hero" style="background:linear-gradient(135deg,#0A1C14,var(--green-dark),#061810)">
+  <div class="about-hero" style="background:linear-gradient(135deg,#082B1A,var(--green-dark),#051A0E)">
     <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center">
       <div>
         <div class="breadcrumb"><span onclick="navigate('home')">Home</span> / Careers</div>
         <h1 class="page-hero-title" style="text-align:left">Build What Matters.<br>Grow with VPMPL.</h1>
-        <p class="page-hero-sub" style="text-align:left;margin:0">Join a team of engineers solving real problems for the industries that power the world. Rigorous work, meaningful outcomes, genuine growth.</p>
+        <p class="page-hero-sub" style="text-align:left;margin:0">Join a specialist automation team led by a 36-year industry expert. Work on real water and process industry projects — and learn engineering the right way, from people who have done it hands-on.</p>
       </div>
       <div class="careers-hero-visual">
         <div class="culture-card"><div class="culture-emoji">🔬</div><div class="culture-title">Deep Engineering</div><div class="culture-text">Work on complex, technically challenging problems that genuinely require expertise</div></div>
@@ -975,7 +1004,7 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
     <div class="container">
       <div class="breadcrumb"><span onclick="navigate('home')">Home</span> / Contact</div>
       <h1 class="page-hero-title">Let's Talk Engineering</h1>
-      <p class="page-hero-sub">Have a project in mind? Looking for a technical partner? Our engineering team responds within one business day.</p>
+      <p class="page-hero-sub">Reach Srinivas Prasad K S directly. With 36 years of automation experience, he personally responds to project inquiries — usually within the same business day.</p>
     </div>
   </div>
   <section class="section">
@@ -1028,7 +1057,7 @@ footer{background:#0A1C14;color:rgba(255,255,255,0.7);padding:72px 0 32px}
           <div class="footer-logo-box"><svg viewBox="0 0 24 24" fill="#fff" width="18" height="18"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.2l7.7 3.8-7.7 3.8-7.7-3.8L12 4.2zm-8 5.4l7 3.4v6.8l-7-3.4V9.6zm9 10.2v-6.8l7-3.4v6.8l-7 3.4z"/></svg></div>
           <div class="footer-logo-text">VPMPL<span>.</span></div>
         </div>
-        <p class="footer-desc">Vaasudeva Process Management Pvt Ltd — Engineering excellence for intelligent industrial operations since 2006.</p>
+        <p class="footer-desc">Process Instrumentation &amp; Automation Solutions for Water, Wastewater and Process Industries. Founder-led. Specialist. Proven.</p>
         <div class="footer-socials">
           <div class="social-btn" title="LinkedIn">in</div>
           <div class="social-btn" title="Twitter">𝕏</div>
